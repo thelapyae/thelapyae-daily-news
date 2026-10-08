@@ -1,48 +1,38 @@
 <!doctype html>
-<html lang="my">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e8">
-  <meta name="description" content="ယနေ့ မြန်မာ့သတင်းနှင့် ကမ္ဘာ့သတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုပါ။">
-  <title>နေ့စဉ်သတင်း — မြန်မာ့နေ့စဉ်သတင်းစာ</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A quiet, monochrome reader for the Hacker News front page. Top stories, points, discussion, and source links.">
+  <title>Frontpage — Hacker News, distilled</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">အကြောင်းအရာသို့ ကျော်ရန်</a>
-  <div class="topline"><div class="wrap top-inner"><span>ကြာသပတေး၊ ၂၀၂၆ ခုနှစ် အောက်တိုဘာ ၈ ရက်</span><span class="edition">နေ့စဉ်ထုတ်ဝေမှု <i></i> အထူးသတင်း</span></div></div>
-  <header class="masthead wrap">
-    <a class="brand" href="#top" aria-label="နေ့စဉ်သတင်း ပင်မစာမျက်နှာ"><span class="brand-mark">သ</span><span><strong>နေ့စဉ်သတင်း</strong><small>သတင်းကို နားလည်ရန်၊ ကမ္ဘာကို သိမြင်ရန်</small></span></a>
-    <div class="mast-meta"><span class="live-dot"></span> ယနေ့၏ အဓိကသတင်းများ</div>
+  <a class="skip-link" href="#stories">Skip to stories</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Frontpage home"><span class="mark">F.</span><span>FRONTPAGE</span></a>
+    <div class="header-note">An independent reader for <a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></div>
   </header>
-  <nav class="nav" aria-label="သတင်းကဏ္ဍများ"><div class="wrap nav-inner">
-    <a class="nav-link active" href="#top">ပင်မ</a><a class="nav-link" href="#headlines">ထိပ်တန်းသတင်း</a><a class="nav-link" href="#region">မြန်မာနှင့် ဒေသတွင်း</a><a class="nav-link" href="#about">ကျွန်ုပ်တို့အကြောင်း</a>
-    <form class="search" role="search" id="searchForm"><label class="visually-hidden" for="searchInput">သတင်းရှာရန်</label><input id="searchInput" type="search" placeholder="သတင်းရှာရန်…"><button aria-label="ရှာရန်" type="submit">⌕</button></form>
-  </div></nav>
-  <main id="main" class="wrap" tabindex="-1">
-    <section class="intro" id="top"><div><p class="eyebrow">ကြာသပတေးနေ့ · အောက်တိုဘာ ၈၊ ၂၀၂၆</p><h1>ယနေ့၏ <em>အရေးကြီးသတင်း</em></h1><p class="intro-copy">ဒေသတွင်းနှင့် မြန်မာနိုင်ငံအပေါ် သက်ရောက်မှုရှိသော ဖြစ်ရပ်များကို ရှင်းလင်းတိကျစွာ တင်ဆက်ထားပါသည်။</p></div><div class="issue-box"><span>ထုတ်ဝေမှု</span><strong>၀၈</strong><small>၂၀၂၆ · အောက်တိုဘာ</small></div></section>
-    <section id="headlines" class="lead-grid" aria-label="ထိပ်တန်းသတင်း">
-      <article class="lead-card story" data-search="မလေးရှား မြန်မာ နိုင်ငံသား ပြန်လည်ပို့ဆောင်ရေး မင်းအောင်လှိုင် အန်ဝါ"><div class="lead-visual"><span class="visual-label">ဒေသတွင်း · ယနေ့</span><div class="visual-art" aria-hidden="true"><span class="sun"></span><span class="horizon"></span><span class="tower tower-one"></span><span class="tower tower-two"></span><span class="river"></span></div><span class="visual-caption">မလေးရှား–မြန်မာ ဆွေးနွေးပွဲ</span></div><div class="lead-text"><div class="story-meta"><span>ထိပ်တန်းသတင်း</span><span>·</span><span>အောက်တိုဘာ ၈</span></div><h2>မြန်မာနိုင်ငံသားများကို အမြန်ဆုံး ပြန်လည်လက်ခံမည်ဟု မင်းအောင်လှိုင် ပြော</h2><p>မလေးရှားရှိ ထိန်းသိမ်းရေးစခန်းများတွင် ထိန်းသိမ်းခံထားရသော အတည်ပြုပြီး မြန်မာနိုင်ငံသားများကို “အမြန်ဆုံး” ပြန်လည်ခေါ်ယူမည်ဟု မင်းအောင်လှိုင်က ပြောကြားခဲ့သည်။ လူ့အခွင့်အရေးအဖွဲ့များက ပြန်ပို့ခံရသူများ၏ ဘေးကင်းလုံခြုံရေးနှင့် ဆန္ဒအလျောက် ပြန်ပို့မှု ဟုတ်မဟုတ်အပေါ် စိုးရိမ်မှုများ ထုတ်ဖော်ထားသည်။</p><a class="read-link" href="https://www.freemalaysiatoday.com/category/highlight/2026/10/08/myanmar-leader-says-will-take-back-migrants-from-malaysia-as-soon-as-possible" target="_blank" rel="noopener noreferrer">မူရင်းသတင်းကို ဖတ်ရန် <span aria-hidden="true">↗</span></a></div></article>
-      <aside class="side-column"><div class="side-heading"><span>ယနေ့အကျဉ်းချုပ်</span><span class="line"></span></div>
-        <article class="brief story" data-search="မလေးရှား အာဆီယံ ပြန်လည်လက်ခံရေး မြန်မာ နိုင်ငံရေး"><span class="brief-number">၀၁</span><div><span class="category">နိုင်ငံရေး · အာဆီယံ</span><h3>မြန်မာနိုင်ငံကို အာဆီယံအသိုင်းအဝိုင်းထဲ ပြန်လည်ပါဝင်နိုင်ရေး ကူညီမည်ဟု မလေးရှားဝန်ကြီးချုပ် ပြော</h3><a href="https://www.reuters.com/world/asia-pacific/malaysia-pm-says-he-will-do-whatever-possible-ensure-myanmars-acceptance-2026-10-08/" target="_blank" rel="noopener noreferrer" class="source-link">Reuters မှ ဖတ်ရန် ↗</a></div></article>
-        <article class="brief story" data-search="မင်းအောင်လှိုင် မလေးရှား လူ့အခွင့်အရေး ဒုက္ခသည် ရိုဟင်ဂျာ"><span class="brief-number">၀၂</span><div><span class="category">သုံးသပ်ချက် · အခွင့်အရေး</span><h3>မလေးရှားခရီးစဉ်သည် နိုင်ငံတကာအသိအမှတ်ပြုမှု ရှာဖွေမှုဟု သုံးသပ်သူများ ပြော</h3><a href="https://www.taipeitimes.com/News/world/archives/2026/10/08/2003865616" target="_blank" rel="noopener noreferrer" class="source-link">Taipei Times မှ ဖတ်ရန် ↗</a></div></article>
-        <div class="editor-note"><span class="note-icon">✳</span><p>အကျဉ်းချုပ်များသည် အရင်းအမြစ်သတင်းများကို ကိုးကားပြန်လည်တင်ပြထားခြင်းဖြစ်သည်။ အသေးစိတ်နှင့် နောက်ဆုံးပြင်ဆင်ချက်များအတွက် မူရင်းသတင်းကို ဖတ်ရှုပါ။</p></div>
-      </aside>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-top"><span class="eyebrow">THE DAILY READER <span class="rule"></span> TECHNOLOGY & IDEAS</span><span class="date" id="today"></span></div>
+      <h1 id="page-title">The front page,<br><span>without the noise.</span></h1>
+      <div class="intro-bottom"><p>A considered view of what the Hacker News community is reading and discussing right now.</p><div class="live-status"><span class="pulse" aria-hidden="true"></span><span id="updated">Connecting to Hacker News…</span></div></div>
     </section>
-    <section class="region-section" id="region"><div class="section-title"><div><p class="eyebrow">သိထားသင့်သည်များ</p><h2>ယနေ့၏ အကြောင်းအရာ</h2></div><span class="result-count" id="resultCount">သတင်း ၃ ပုဒ်</span></div>
-      <div class="story-cards">
-        <article class="story-card story" data-search="ပြန်ပို့ မလေးရှား ထိန်းသိမ်းရေး ရိုဟင်ဂျာ မြန်မာ"><span class="card-tag">ပြန်လည်ပို့ဆောင်ရေး</span><span class="card-index">01 / 03</span><h3>ပြန်ပို့ရေးအစီအစဉ်အပေါ် လူ့အခွင့်အရေး စိုးရိမ်ချက်များ</h3><p>မလေးရှားမှ မြန်မာနိုင်ငံသားများ ပြန်လည်ပို့ဆောင်ရေးအပေါ် ကုလသမဂ္ဂနှင့် လူ့အခွင့်အရေးအဖွဲ့များက အန္တရာယ်ဖြစ်နိုင်ခြေများကို သတိပေးထားကြောင်း သတင်းများတွင် ဖော်ပြသည်။</p><a href="https://www.taipeitimes.com/News/world/archives/2026/10/08/2003865616" target="_blank" rel="noopener noreferrer">အရင်းအမြစ် <span>↗</span></a></article>
-        <article class="story-card story" data-search="အာဆီယံ မလေးရှား မြန်မာ မင်းအောင်လှိုင် နိုင်ငံတကာ ဆက်ဆံရေး"><span class="card-tag">အာဆီယံ</span><span class="card-index">02 / 03</span><h3>မလေးရှားက မြန်မာ့အာဆီယံဆက်ဆံရေး ပြန်လည်ကောင်းမွန်ရေး ကြိုးပမ်းမည်</h3><p>မလေးရှားဝန်ကြီးချုပ် အန်ဝါ အီဘရာဟင်က မြန်မာနိုင်ငံ၏ ဒေသတွင်းပါဝင်မှုနှင့်ပတ်သက်၍ တတ်နိုင်သမျှ ကြိုးပမ်းမည်ဟု ပြောကြားခဲ့ကြောင်း Reuters က ဖော်ပြသည်။</p><a href="https://www.reuters.com/world/asia-pacific/malaysia-pm-says-he-will-do-whatever-possible-ensure-myanmars-acceptance-2026-10-08/" target="_blank" rel="noopener noreferrer">Reuters <span>↗</span></a></article>
-        <article class="story-card story" data-search="ပြန်လည်လက်ခံ မင်းအောင်လှိုင် မလေးရှား နိုင်ငံသားများ"><span class="card-tag">မြန်မာ–မလေးရှား</span><span class="card-index">03 / 03</span><h3>အတည်ပြုပြီး နိုင်ငံသားများကို ပြန်လည်လက်ခံမည်ဟု ပြော</h3><p>မင်းအောင်လှိုင်သည် ကြာသပတေးနေ့ သတင်းစာရှင်းလင်းပွဲတွင် မလေးရှား၌ ထိန်းသိမ်းခံထားရသူများကို ပြန်ခေါ်မည်ဟု ပြောခဲ့ကြောင်း AFP သတင်းကို ကိုးကား၍ FMT က ဖော်ပြသည်။</p><a href="https://www.freemalaysiatoday.com/category/highlight/2026/10/08/myanmar-leader-says-will-take-back-migrants-from-malaysia-as-soon-as-possible" target="_blank" rel="noopener noreferrer">Free Malaysia Today <span>↗</span></a></article>
+    <section class="feed" aria-labelledby="feed-title">
+      <div class="feed-heading"><div><span class="eyebrow">LIVE FROM HACKER NEWS</span><h2 id="feed-title">Top stories</h2></div><div class="feed-meta"><span id="story-count">—</span><button id="refresh" type="button" aria-label="Refresh stories">Refresh <span aria-hidden="true">↻</span></button></div></div>
+      <div id="stories" class="story-list" aria-live="polite" aria-busy="true">
+        <div class="loading-row"><span class="skeleton"></span><span class="skeleton short"></span><span class="skeleton"></span><span class="skeleton short"></span></div>
       </div>
-      <p class="empty-state" id="emptyState" hidden>ရှာဖွေမှုနှင့် ကိုက်ညီသော သတင်းမတွေ့ပါ။ အခြားစကားလုံးဖြင့် ထပ်မံရှာဖွေပါ။</p>
+      <p id="error" class="error" hidden>Stories could not be loaded. Please try again in a moment.</p>
+      <p class="feed-footnote">Rankings, points and comments come from the live Hacker News feed. Takeaways are concise editorial descriptions; follow the source for full reporting.</p>
     </section>
-    <section class="sources" id="about"><span class="sources-icon">✦</span><div><h2>သတင်းရင်းမြစ်နှင့် တိကျမှု</h2><p>ဤစာမျက်နှာသည် သတင်းအရင်းအမြစ်များ၏ ယနေ့ထုတ်ဝေမှုများကို မြန်မာဘာသာဖြင့် အကျဉ်းချုပ်တင်ဆက်ထားသည်။ မူရင်းသတင်းဌာနများနှင့် သက်ဆိုင်ရာလင့်ခ်များကို သတင်းတစ်ပုဒ်ချင်းစီတွင် ဖော်ပြထားပါသည်။ အခြေအနေများ လျင်မြန်စွာပြောင်းလဲနိုင်သဖြင့် မူရင်းရင်းမြစ်ကို စစ်ဆေးဖတ်ရှုပါ။</p></div></section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#top">နေ့စဉ်သတင်း</a><span>© ၂၀၂၆ · သတင်းရင်းမြစ်များကို လေးစားစွာ ကိုးကားဖော်ပြသည်</span><a href="#top" class="back-top">အပေါ်သို့ ↑</a></div></footer>
+  <footer class="site-footer"><a class="wordmark footer-mark" href="#top"><span class="mark">F.</span><span>FRONTPAGE</span></a><span>Made for curious readers.</span><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Visit Hacker News ↗</a></footer>
 </body>
 </html>
