@@ -1,38 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="my">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="A quiet, monochrome reader for the Hacker News front page. Top stories, points, discussion, and source links.">
-  <title>Frontpage — Hacker News, distilled</title>
+  <meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် နက်နက်ရှိုင်းရှိုင်း ဖတ်ရှုရန်။">
+  <title>ရှေ့မျက်နှာစာ — Hacker News ကို မြန်မာလို</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#stories">Skip to stories</a>
+  <a class="skip-link" href="#stories">သတင်းများဆီသို့ ကျော်ရန်</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Frontpage home"><span class="mark">F.</span><span>FRONTPAGE</span></a>
-    <div class="header-note">An independent reader for <a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></div>
+    <a class="wordmark" href="#top" aria-label="ရှေ့မျက်နှာစာ မူလစာမျက်နှာ"><span class="mark">F.</span><span>ရှေ့မျက်နှာစာ</span></a>
+    <div class="header-note">Hacker News အတွက် လွတ်လပ်သော မြန်မာဖတ်ရှုသူ</div>
   </header>
   <main id="top">
     <section class="intro" aria-labelledby="page-title">
-      <div class="intro-top"><span class="eyebrow">THE DAILY READER <span class="rule"></span> TECHNOLOGY & IDEAS</span><span class="date" id="today"></span></div>
-      <h1 id="page-title">The front page,<br><span>without the noise.</span></h1>
-      <div class="intro-bottom"><p>A considered view of what the Hacker News community is reading and discussing right now.</p><div class="live-status"><span class="pulse" aria-hidden="true"></span><span id="updated">Connecting to Hacker News…</span></div></div>
+      <div class="intro-top"><span class="eyebrow">နေ့စဉ်ဖတ်ရှုရန် <span class="rule"></span> နည်းပညာနှင့် အတွေးအခေါ်</span><span class="date" id="today"></span></div>
+      <h1 id="page-title">ကမ္ဘာ့သတင်းစုံ၊<br><span>မြန်မာလို နက်နက်ရှိုင်းရှိုင်း။</span></h1>
+      <div class="intro-bottom"><p>လက်ရှိ Hacker News ထိပ်တန်းဆောင်းပါးများကို အဓိကနည်းပညာအချက်များ၊ နောက်ခံအကြောင်းအရာနှင့် ဖတ်ရှုသင့်သည့်အချက်များဖြင့် စုစည်းထားသည်။ AI Agent၊ Architecture၊ Model၊ LLM၊ Performance၊ Inference နှင့် Benchmarks ကဲ့သို့သော နည်းပညာဝေါဟာရများကို အဓိပ္ပာယ်မပျောက်စေရန် အင်္ဂလိပ်လိုပါ ထည့်သွင်းထားသည်။</p><div class="live-status"><span class="pulse" aria-hidden="true"></span><span id="updated">Hacker News နှင့် ချိတ်ဆက်နေသည်…</span></div></div>
     </section>
     <section class="feed" aria-labelledby="feed-title">
-      <div class="feed-heading"><div><span class="eyebrow">LIVE FROM HACKER NEWS</span><h2 id="feed-title">Top stories</h2></div><div class="feed-meta"><span id="story-count">—</span><button id="refresh" type="button" aria-label="Refresh stories">Refresh <span aria-hidden="true">↻</span></button></div></div>
-      <div id="stories" class="story-list" aria-live="polite" aria-busy="true">
-        <div class="loading-row"><span class="skeleton"></span><span class="skeleton short"></span><span class="skeleton"></span><span class="skeleton short"></span></div>
-      </div>
-      <p id="error" class="error" hidden>Stories could not be loaded. Please try again in a moment.</p>
-      <p class="feed-footnote">Rankings, points and comments come from the live Hacker News feed. Takeaways are concise editorial descriptions; follow the source for full reporting.</p>
+      <div class="feed-heading"><div><span class="eyebrow">HACKER NEWS မှ တိုက်ရိုက်</span><h2 id="feed-title">ထိပ်တန်းဆောင်းပါးများ</h2></div><div class="feed-meta"><span id="story-count">—</span><button id="refresh" type="button" aria-label="သတင်းများ ပြန်လည်ရယူရန်">ပြန်ဖတ်ရန် <span aria-hidden="true">↻</span></button></div></div>
+      <div id="stories" class="story-list" aria-live="polite" aria-busy="true"><div class="loading-row"><span class="skeleton"></span><span class="skeleton short"></span><span class="skeleton"></span><span class="skeleton short"></span></div></div>
+      <p id="error" class="error" hidden>သတင်းများကို ယခုရယူ၍ မရသေးပါ။ ခဏကြာပြီး ပြန်ကြိုးစားပါ။</p>
+      <p class="feed-footnote">အဆင့်၊ အမှတ်နှင့် မှတ်ချက်အရေအတွက်များကို Hacker News မှ တိုက်ရိုက်ရယူထားသည်။ ရှင်းလင်းချက်များသည် မူရင်းရင်းမြစ်မှ အတည်ပြုနိုင်သောအချက်များအပေါ် အခြေခံထားသည်။ မူရင်းဆောင်းပါးနှင့် ဆွေးနွေးချက်ကို လင့်ခ်များမှ ဖတ်နိုင်သည်။ အချို့သတင်းများ၏ မူရင်းစာမျက်နှာကို ဖတ်ရှု၍မရပါက ထိုကန့်သတ်ချက်ကို ရှင်းလင်းစွာ ဖော်ပြထားသည်။</p>
     </section>
   </main>
-  <footer class="site-footer"><a class="wordmark footer-mark" href="#top"><span class="mark">F.</span><span>FRONTPAGE</span></a><span>Made for curious readers.</span><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Visit Hacker News ↗</a></footer>
+  <footer class="site-footer"><a class="wordmark footer-mark" href="#top"><span class="mark">F.</span><span>ရှေ့မျက်နှာစာ</span></a><span>စူးစမ်းလိုသူများအတွက်။</span><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News သို့ သွားရန် ↗</a></footer>
 </body>
 </html>
