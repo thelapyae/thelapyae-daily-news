@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၅။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၅</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၆။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၆</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">ကြာသပတေးနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၅</span>
-    <div class="date-en">Thursday, November 5, 2026</div>
+    <span class="eyebrow">သောကြာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၆</span>
+    <div class="date-en">Friday, November 6, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,20 +61,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">Ripple-65B အစမ်းကြည့်ရှုချက် — အမေရိကန် open-weight အကောင်းဆုံး agentic coding မော်ဒယ်</h2>
-        <span class="src">ricursive.com</span>
+        <h2 class="story-title">Claude Code သည် web search header များတွင် အီးမေးလ်လိပ်စာများ ယိုဖိတ်ခြင်း</h2>
+        <span class="src">github.com/anthropics/claude-code</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Ricursive မှ ၆၅ ဘီလီယံ parameter ရှိ open-weight မော်ဒယ် Ripple-65B ကို မိတ်ဆက်ပြီး agentic coding benchmark များတွင် အမေရိကန် open-weight မော်ဒယ်များထဲမှ ထိပ်တန်းဖြစ်ကြောင်း ဖော်ပြသည်။</p>
+          <p>Claude Code တွင် အသုံးပြုသူ၏ အီးမေးလ်ကို web search request header များတွင် မရည်ရွယ်ဘဲ ပါဝင်ပို့ဆောင်ခဲ့သည့် issue ဖြစ်သည်။ Maintainer များက patch ကို ထုတ်ပြန်ခဲ့ပြီး v2.1.317 နှင့် နောက်ပိုင်းတွင် privacy blocking ကို default အနေဖြင့် ဖွင့်ပေးထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>65B parameter open-weight model</li>
-            <li>Agentic coding benchmarks</li>
-            <li>US open-weight SOTA claim</li>
+            <li>Web search request headers</li>
+            <li>Unintended PII leakage (email address)</li>
+            <li>Privacy blocking enabled by default in v2.1.317+</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.ricursive.com/ripple">မူရင်းဆိုက် ↗</a>
+          <a href="https://github.com/anthropics/claude-code/issues/107757">GitHub issue ↗</a>
         </div>
       </div>
     </article>
@@ -82,19 +82,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">Kimi K3.1 Pro မော်ဒယ် weights ထုတ်ပြန်ခြင်း</h2>
-        <span class="src">huggingface.co</span>
+        <h2 class="story-title">sshole — musl စနစ်များပေါ်ရှိ OpenSSH Authentication Bypass</h2>
+        <span class="src">sshhole.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Moonshot AI မှ open-weight multimodal foundation model Kimi K3.1 Pro ကို Hugging Face တွင် weights ထုတ်ပြန်ခဲ့သည်။</p>
+          <p>musl ကို အသုံးပြုသော Linux distribution အချို့တွင် password authentication ပိတ်ထားသော account များက အလွန်ရှည်သော password များကို လက်ခံနိုင်သည်ဟု security advisory က ဖော်ပြသည်။ ပြင်ဆင်ရန် OpenSSH ကို update လုပ်ရန် သို့မဟုတ် password authentication ကို လုံးဝပိတ်ရန် လိုအပ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Open-weight multimodal foundation model</li>
-            <li>Hugging Face model release</li>
+            <li>OpenSSH on musl-based systems</li>
+            <li>Password-disabled accounts accepting overly long passwords</li>
+            <li>Mitigation: OpenSSH update or disable password auth entirely</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Model page ↗</a>
+          <a href="https://sshhole.com">Advisory ↗</a>
         </div>
       </div>
     </article>
@@ -102,19 +103,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">OpenAI Images 2.6 — မျိုးဆက်သစ် ပုံဖန်တီးမှု မော်ဒယ် အပ်ဒိတ်</h2>
-        <span class="src">openai.com</span>
+        <h2 class="story-title">MS Paint Remote Code Execution အားနည်းချက် (CVE-2026-83844)</h2>
+        <span class="src">cve.org</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>OpenAI ၏ နောက်မျိုးဆက် image generation နှင့် multimodal generation မော်ဒယ် အပ်ဒိတ် ဖြစ်သည်။</p>
+          <p>MS Paint ၏ parsing logic တွင် critical RCE အားနည်းချက် ရှိကြောင်း တင်ပြထားသည်။ အသေးစိတ်ကို scraper ဖြင့် အတည်မပြုနိုင်သေးပါ။ Sandbox ထားရှိခြင်းနှင့် patch များကို စောင့်ကြည့်ခြင်းကို အကြံပြုသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Image generation model</li>
-            <li>Multimodal generation</li>
+            <li>Remote code execution (RCE)</li>
+            <li>File parsing logic vulnerability</li>
+            <li>Details unconfirmed; recommend sandboxing and patch monitoring</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://openai.com/index/introducing-images-2-6/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-83844">CVE ရekoord ↗</a>
         </div>
       </div>
     </article>
@@ -122,20 +124,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">A Thousand Fewer Paths to Root — OpenAI ၏ infrastructure လုံခြုံရေး အင်ဂျင်နီယာဆိုင်ရာ အလုပ်</h2>
-        <span class="src">openai.com</span>
+        <h2 class="story-title">Nvidia Kubernetes Engine (NVKE) Preview</h2>
+        <span class="src">github.com/dsx-ai-factory/nvke</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Kernel attack surface ကို လျှော့ချခြင်း၊ privilege escalation ကို ခိုင်မာစေခြင်းနှင့် zero-trust container လုံခြုံရေးတို့ကို OpenAI infrastructure တွင် မည်သို့ အကောင်အထည်ဖော်ခဲ့သည်ကို ဖော်ပြသည်။</p>
+          <p>NVIDIA က AI factory များရှိ bare-metal GPU Kubernetes cluster များအတွက် management plane preview ကို open-source အဖြစ် ထုတ်ပြန်ခဲ့သည်။ လက်ရှိတွင် pre-production အခြေအနေ ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Kernel attack surface reduction</li>
-            <li>Privilege escalation hardening</li>
-            <li>Zero-trust container security</li>
+            <li>Kubernetes management plane</li>
+            <li>Bare-metal GPU clusters</li>
+            <li>AI factory infrastructure</li>
+            <li>Status: pre-production preview</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://github.com/dsx-ai-factory/nvke">GitHub repository ↗</a>
         </div>
       </div>
     </article>
@@ -143,20 +146,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">အမေရိကန်သမ္မတအိမ်တော် ကွန်ရက်တွင် residential proxy များ တွေ့ရှိခြင်း</h2>
-        <span class="src">layer3intel.com</span>
+        <h2 class="story-title">Inkling 2 Small — open-weight multimodal နှင့် coding မော်ဒယ်</h2>
+        <span class="src">thinkingmachines.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>အစိုးရ executive ကွန်ရက် အတွင်းတွင် residential proxy / botnet egress node များ ရှိနေသည်ကို threat intelligence အစီရင်ခံစာက ဖော်ပြသည်။</p>
+          <p>Thinking Machines Lab မှ coding နှင့် vision စွမ်းရည်ရှိသော အရွယ်သေးသည့် မော်ဒယ်ကို ထုတ်ပြန်သည်။ Red-teaming ပြီးနောက် Apache 2.0 လိုင်စင်ဖြင့် weights ကို ထုတ်ပြန်ရန် စီစဉ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Residential proxy network</li>
-            <li>Botnet egress nodes</li>
-            <li>Threat intelligence report</li>
+            <li>Open-weight multimodal model</li>
+            <li>Coding and vision capability</li>
+            <li>Planned Apache 2.0 weights release after red-teaming</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://layer3intel.com/blog/residential-proxies-white-house-network">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://thinkingmachines.ai/news/inkling-2-small/">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -164,20 +167,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Go 1.27 တွင် JSON v2 API — stable json/v2 နှင့် jsontext package များ</h2>
-        <span class="src">go.dev</span>
+        <h2 class="story-title">Price-Performance အနားသတ်တွင် Closed AI မော်ဒယ်များ ဦးဆောင်နေခြင်း</h2>
+        <span class="src">village.dev</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Go 1.27 တွင် json/v2 နှင့် jsontext package များ stable ဖြစ်လာပြီး streaming performance၊ semantic correctness နှင့် schema handling ကို ပြင်ဆင်ထားကြောင်း ဖော်ပြသည်။</p>
+          <p>Village ၏ benchmark ခွဲခြမ်းစိတ်ဖြာချက်အရ inference tier အများစုတွင် frontier closed မော်ဒယ်များက open-weight မော်ဒယ်များထက် ကုန်ကျစရိတ်-စွမ်းဆောင်ရည် အားသာချက်ကို ဆက်လက်ထိန်းထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>encoding/json/v2 and jsontext (Go 1.27)</li>
-            <li>Streaming performance</li>
-            <li>Customizable marshal / unmarshal behavior</li>
+            <li>Price-performance frontier</li>
+            <li>Inference cost tiers</li>
+            <li>Closed vs open-weight model comparison</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://go.dev/blog/jsonv2">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -185,21 +188,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">Xbox 360 Hypervisor ကို ဖောက်ထွင်းခြင်း အပိုင်း ၃ — Bad Update တိုးတက်မှုများ</h2>
-        <span class="src">icode4.coffee</span>
+        <h2 class="story-title">AI ဖြင့် ပြန်လည်ထွင်သော Hackintosh</h2>
+        <span class="src">naut.ca</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Reverse engineering နှင့် memory corruption ဖြင့် hypervisor privilege escalation ကို ရရှိခဲ့ပုံ၊ ယုံကြည်စိတ်ချရသော glitching exploit ကို မြှင့်တင်ခဲ့ပုံကို ဆက်လက်ဖော်ပြသည်။</p>
+          <p>x86 hardware ပေါ်တွင် macOS ကို run ရန် agentic coding assistant (LLM) များကို အသုံးပြုပြီး kernel patching၊ ACPI table နှင့် kext ဖန်တီးမှုကို အလိုအလျောက်လုပ်ဆောင်ခဲ့ပုံကို ပြန်လည်သုံးသပ်ပြီး စမ်းသပ်ချက်များ ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Reverse engineering</li>
-            <li>Memory corruption</li>
-            <li>Hypervisor privilege escalation</li>
-            <li>Fault injection / glitching</li>
+            <li>Agentic coding assistants (LLM)</li>
+            <li>Kernel patching for macOS on x86</li>
+            <li>ACPI tables and kext generation</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://icode4.coffee/?p=1746">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -207,20 +209,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">Starfall — microgravity သို့ ပုံမှန်ဝင်ရောက်နိုင်ခြင်း</h2>
-        <span class="src">spacex.com</span>
+        <h2 class="story-title">Pwn.college — လက်တွေ့ systems security သင်ကြားရေး</h2>
+        <span class="src">pwn.college</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>SpaceX ၏ microgravity ပလက်ဖောင်း ဖြစ်ပြီး အလိုအလျောက် orbital manufacturing နှင့် physical science စမ်းသပ်မှုများအတွက် ရည်ရွယ်သည်။</p>
+          <p>Arizona State University ၏ SEFCOM မှ ထုတ်ပြန်သော အခမဲ့ဝင်ရောက်နိုင်သည့် binary exploitation နှင့် systems security သင်ရိုးဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Commercial microgravity platform</li>
-            <li>Automated orbital manufacturing</li>
-            <li>Physical science experiments</li>
+            <li>Binary exploitation</li>
+            <li>Systems security curriculum</li>
+            <li>Open-access education</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.spacex.com/starfall">မူရင်းဆိုက် ↗</a>
+          <a href="https://pwn.college/">မူရင်းဆိုက် ↗</a>
         </div>
       </div>
     </article>
@@ -228,20 +230,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">09</span>
       <div>
-        <h2 class="story-title">Conductor သည် Meta သို့ ပူးပေါင်းခြင်း</h2>
-        <span class="src">conductor.build</span>
+        <h2 class="story-title">Tesla နှင့် SpaceX ပေါင်းစု $420B တန်ဖိုး ကျဆင်းခြင်း</h2>
+        <span class="src">techlaws.pages.dev</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Cloud orchestration နှင့် AI dev workspace startup ဖြစ်သော Conductor ကို Meta က ဝယ်ယူခြင်း ဖြစ်သည်။ Cloud ဝန်ဆောင်မှုကို ဖြုတ်သိမ်းမည်ဖြစ်ပြီး local execution ကို ဆက်လက်ထိန်းသိမ်းမည်ဟု ကြေညာသည်။</p>
+          <p>ရွေးကောက်ပွဲနောက်ပိုင်း ဈေးကွက်ပြောင်းလဲမှုကြောင့် Tesla နှင့် SpaceX ၏ ပေါင်းစု market cap သည် နှစ်ရက်အတွင်း $420B ကျော် ဆုံးရှုံးခဲ့သည်ဟု ဆောင်းပါးက ဖော်ပြသည်။ Commercial aerospace contract နှင့် EV မူဝါဒ ထိတွေ့မှုကိုလည်း ခွဲခြမ်းစိတ်ဖြာသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Cloud orchestration</li>
-            <li>AI development workspace</li>
-            <li>Cloud wind-down with local execution retained</li>
+            <li>Market cap correction (~$420B combined)</li>
+            <li>Commercial aerospace contract exposure</li>
+            <li>EV policy exposure</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.conductor.build/announcement">မူရင်းကြေညာချက် ↗</a>
+          <a href="https://techlaws.pages.dev/tesla-and-spacex-lose-over-420b-in-combined-market-cap-in-the-two-days/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -249,20 +251,19 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">10</span>
       <div>
-        <h2 class="story-title">LED မီးများဆီ ပိုးမွှားများ မစုပြုံရခြင်း၏ အကြောင်းရင်း</h2>
-        <span class="src">birdsoutsidemywindow.org</span>
+        <h2 class="story-title">Window Sweaters — macOS အတွက် ထိုးထားသော UI ဘောင်များ</h2>
+        <span class="src">github.com/saragordic/window-sweaters</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Solid-state LED မီးများတွင် UV အလင်းရောင် spectrum မပါဝင်သဖြင့် ပိုးမွှားများ၏ phototaxis (အလင်းဆီ ရွေ့လျားမှု) လျော့ကျသွားကြောင်း photobiology ခွဲခြမ်းစိတ်ဖြာချက်က ရှင်းပြသည်။</p>
+          <p>macOS menu bar utility တစ်ခုဖြစ်ပြီး window များကို ထိုးထားသော (knitted) အလှဆင်ဘောင်များ ထည့်သွင်းပေးသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Photobiology / insect phototaxis</li>
-            <li>UV radiation spectrum absence in LED lighting</li>
-            <li>Solid-state lighting</li>
+            <li>macOS menu bar utility</li>
+            <li>Custom window border decoration</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://github.com/saragordic/window-sweaters">GitHub repository ↗</a>
         </div>
       </div>
     </article>
