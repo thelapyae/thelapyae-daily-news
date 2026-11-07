@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၆။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၆</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၇။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၇</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">သောကြာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၆</span>
-    <div class="date-en">Friday, November 6, 2026</div>
+    <span class="eyebrow">စနေနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၇</span>
+    <div class="date-en">Saturday, November 7, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,20 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">Claude Code သည် web search header များတွင် အီးမေးလ်လိပ်စာများ ယိုဖိတ်ခြင်း</h2>
-        <span class="src">github.com/anthropics/claude-code</span>
+        <h2 class="story-title">Libghostty 1.0 — Ghostty ၏ terminal emulation C library တည်ငြိမ်သော ဗားရှင်း</h2>
+        <span class="src">mitchellh.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Claude Code တွင် အသုံးပြုသူ၏ အီးမေးလ်ကို web search request header များတွင် မရည်ရွယ်ဘဲ ပါဝင်ပို့ဆောင်ခဲ့သည့် issue ဖြစ်သည်။ Maintainer များက patch ကို ထုတ်ပြန်ခဲ့ပြီး v2.1.317 နှင့် နောက်ပိုင်းတွင် privacy blocking ကို default အနေဖြင့် ဖွင့်ပေးထားသည်။</p>
+          <p>Mitchell Hashimoto က Ghostty ၏ terminal emulation core library ဖြစ်သော libghostty ၏ တည်ငြိမ်သော 1.0 ဗားရှင်းကို ကြေညာသည်။ Cross-platform ထောက်ပံ့မှုရှိပြီး ABI နှင့် API တည်ငြိမ်မှုကို အာမခံထားကြောင်း ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Web search request headers</li>
-            <li>Unintended PII leakage (email address)</li>
-            <li>Privacy blocking enabled by default in v2.1.317+</li>
+            <li>libghostty (C library)</li>
+            <li>Terminal emulation core</li>
+            <li>Guaranteed ABI / API stability</li>
+            <li>Cross-platform support</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/anthropics/claude-code/issues/107757">GitHub issue ↗</a>
+          <a href="https://mitchellh.com/writing/libghostty-1-0">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -82,20 +83,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">sshole — musl စနစ်များပေါ်ရှိ OpenSSH Authentication Bypass</h2>
-        <span class="src">sshhole.com</span>
+        <h2 class="story-title">Hybrid LLM Evaluator — Jev နှင့် Opus Routing ပေါင်းစပ်အသုံးပြုခြင်း</h2>
+        <span class="src">hightouch.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>musl ကို အသုံးပြုသော Linux distribution အချို့တွင် password authentication ပိတ်ထားသော account များက အလွန်ရှည်သော password များကို လက်ခံနိုင်သည်ဟု security advisory က ဖော်ပြသည်။ ပြင်ဆင်ရန် OpenSSH ကို update လုပ်ရန် သို့မဟုတ် password authentication ကို လုံးဝပိတ်ရန် လိုအပ်သည်။</p>
+          <p>Hightouch ၏ benchmark engineering ဖြစ်သည်။ TypeSafe AI ၏ Jev ကို ကုန်ကျစရိတ်နည်းပြီး မြန်ဆန်သော inference အတွက် အသုံးပြုကာ ခက်ခဲသော edge-case identity resolution အတွက် Claude Opus သို့ fallback escalation လုပ်သည်။ ရလဒ်အနေဖြင့် Opus အဆင့်တိကျမှုကို ကုန်ကျစရိတ် ၄ ဆ နည်းစွာဖြင့် ရရှိသည်ဟု ဆိုသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>OpenSSH on musl-based systems</li>
-            <li>Password-disabled accounts accepting overly long passwords</li>
-            <li>Mitigation: OpenSSH update or disable password auth entirely</li>
+            <li>LLM-as-judge evaluation</li>
+            <li>Identity resolution</li>
+            <li>Model routing with fallback escalation</li>
+            <li>Claimed 4x lower cost at Opus-tier accuracy</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://sshhole.com">Advisory ↗</a>
+          <a href="https://hightouch.com/blog/llm-judges-identity-resolution">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -103,20 +105,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">MS Paint Remote Code Execution အားနည်းချက် (CVE-2026-83844)</h2>
-        <span class="src">cve.org</span>
+        <h2 class="story-title">Firecracker MicroVM Escape — PwnEscape အပိုင်း ၂</h2>
+        <span class="src">pwn.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>MS Paint ၏ parsing logic တွင် critical RCE အားနည်းချက် ရှိကြောင်း တင်ပြထားသည်။ အသေးစိတ်ကို scraper ဖြင့် အတည်မပြုနိုင်သေးပါ။ Sandbox ထားရှိခြင်းနှင့် patch များကို စောင့်ကြည့်ခြင်းကို အကြံပြုသည်။</p>
+          <p>AWS Firecracker microVM မှ host OS သို့ hypervisor boundary ကို KVM နှင့် VMM state corruption မှတစ်ဆင့် ဖောက်ထွင်းပုံကို စနစ်လုံခြုံရေး နက်နက်ရှိုင်းရှိုင်း ခွဲခြမ်းစိတ်ဖြာသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Remote code execution (RCE)</li>
-            <li>File parsing logic vulnerability</li>
-            <li>Details unconfirmed; recommend sandboxing and patch monitoring</li>
+            <li>AWS Firecracker microVM</li>
+            <li>Hypervisor boundary escape</li>
+            <li>KVM / VMM state corruption</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.cve.org/CVERecord?id=CVE-2026-83844">CVE Record ↗</a>
+          <a href="https://pwn.ai/blog/firecracker-escape">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -124,21 +126,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">Nvidia Kubernetes Engine (NVKE) Preview</h2>
-        <span class="src">github.com/dsx-ai-factory/nvke</span>
+        <h2 class="story-title">Unitree စက်ရုံခြေလှမ်း နှင့် အနောက်တိုင်း robotics automation</h2>
+        <span class="src">josef.cn</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>NVIDIA က AI factory များရှိ bare-metal GPU Kubernetes cluster များအတွက် management plane preview ကို open-source အဖြစ် ထုတ်ပြန်ခဲ့သည်။ လက်ရှိတွင် pre-production အခြေအနေ ဖြစ်သည်။</p>
+          <p>Unitree robotics ၏ စက်ရုံ assembly line များကို တိုက်ရိုက်လေ့လာချက်အရ လက်ရှိတွင် လူလက်ဖြင့် အလုပ်သမားအား အများအပြား မှီခိုနေဆဲဖြစ်ကြောင်း တွေ့ရသည်။ ၎င်းနှိုင်းယှဉ်ချက်အရ အနောက်တိုင်းတွင် automated manufacturing အတွက် အခွင့်အလမ်းများ ရှိကြောင်း ဆွေးနွေးသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Kubernetes management plane</li>
-            <li>Bare-metal GPU clusters</li>
-            <li>AI factory infrastructure</li>
-            <li>Status: pre-production preview</li>
+            <li>Robotics assembly lines</li>
+            <li>Manual labor reliance in manufacturing</li>
+            <li>Automated manufacturing opportunities</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/dsx-ai-factory/nvke">GitHub repository ↗</a>
+          <a href="https://josef.cn/blog/unitree">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -146,20 +147,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">Inkling 2 Small — open-weight multimodal နှင့် coding မော်ဒယ်</h2>
-        <span class="src">thinkingmachines.ai</span>
+        <h2 class="story-title">Tesla သည် 2027 မတ်လအရောက်တွင် Cybertruck ထုတ်လုပ်မှုကို ဖြုတ်သိမ်းမည်ဟု သတင်းရ</h2>
+        <span class="src">nbcnews.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Thinking Machines Lab မှ coding နှင့် vision စွမ်းရည်ရှိသော အရွယ်သေးသည့် မော်ဒယ်ကို ထုတ်ပြန်သည်။ Red-teaming ပြီးနောက် Apache 2.0 လိုင်စင်ဖြင့် weights ကို ထုတ်ပြန်ရန် စီစဉ်ထားသည်။</p>
+          <p>Giga Texas ရှိ Cybertruck ထုတ်လုပ်နိုင်စွမ်းကို 2027 အထိ အဆင့်ဆင်းလျှော့ချပြီး Cybercab နှင့် Robotaxi ထုတ်လုပ်မှုအတွက် line များကို ပြန်ပြင်ရန် ရည်ရွယ်ကြောင်း သတင်းများက ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Open-weight multimodal model</li>
-            <li>Coding and vision capability</li>
-            <li>Planned Apache 2.0 weights release after red-teaming</li>
+            <li>Giga Texas production capacity</li>
+            <li>Production line retooling for Cybercab / Robotaxi</li>
+            <li>Reported wind-down by mid-2027</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://thinkingmachines.ai/news/inkling-2-small/">မူရင်းသတင်း ↗</a>
+          <a href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -167,20 +168,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Price-Performance အနားသတ်တွင် Closed AI မော်ဒယ်များ ဦးဆောင်နေခြင်း</h2>
-        <span class="src">village.dev</span>
+        <h2 class="story-title">RealPage အယ်လ်ဂိုရီသမ် ဖြင့် အိမ်ငှားခ သဘောတူညီမှုဖြေရှင်းချက် — $360M</h2>
+        <span class="src">multifamilydive.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Village ၏ benchmark ခွဲခြမ်းစိတ်ဖြာချက်အရ inference tier အများစုတွင် frontier closed မော်ဒယ်များက open-weight မော်ဒယ်များထက် ကုန်ကျစရိတ်-စွမ်းဆောင်ရည် အားသာချက်ကို ဆက်လက်ထိန်းထားသည်။</p>
+          <p>RealPage yield management software ဖြင့် အိမ်ရှင်များ algorithmic ညှိနှိုင်းမှု ပြုလုပ်ခဲ့သည်ဟူသော federal antitrust class-action အမှုတွင် ~$360M ပေးချေမှုကို အတည်ပြုသော ဖြေရှင်းချက် ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Price-performance frontier</li>
-            <li>Inference cost tiers</li>
-            <li>Closed vs open-weight model comparison</li>
+            <li>Algorithmic rent-price coordination</li>
+            <li>Yield management software</li>
+            <li>Federal antitrust class action</li>
+            <li>Settlement payouts ~$360M</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -188,20 +190,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">AI ဖြင့် ပြန်လည်ထွင်သော Hackintosh</h2>
-        <span class="src">naut.ca</span>
+        <h2 class="story-title">US FAA — 2028 နှစ်တွင် floppy disk များကို ပြဖျက်ရန်</h2>
+        <span class="src">reuters.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>x86 hardware ပေါ်တွင် macOS ကို run ရန် agentic coding assistant (LLM) များကို အသုံးပြုပြီး kernel patching၊ ACPI table နှင့် kext ဖန်တီးမှုကို အလိုအလျောက်လုပ်ဆောင်ခဲ့ပုံကို ပြန်လည်သုံးသပ်ပြီး စမ်းသပ်ချက်များ ဖော်ပြသည်။</p>
+          <p>FAA သည် လေဆိပ်ထိန်းချုပ်ရေးနှင့် flight plan စနစ်များတွင် အသုံးပြုနေဆဲ 3.5 လက်မ floppy disk များကို 2028 အထိ ဖယ်ရှားရန် ကတိပြုထားကြောင်း Reuters က ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Agentic coding assistants (LLM)</li>
-            <li>Kernel patching for macOS on x86</li>
-            <li>ACPI tables and kext generation</li>
+            <li>Legacy 3.5-inch floppy disk deprecation</li>
+            <li>Air Traffic Control radar and flight plan systems</li>
+            <li>Target year: 2028</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -209,20 +211,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">Pwn.college — လက်တွေ့ systems security သင်ကြားရေး</h2>
-        <span class="src">pwn.college</span>
+        <h2 class="story-title">Akrotiri — အေဂီယန်ကြေးနီခေတ်၏ Pompeii</h2>
+        <span class="src">smithsonianmag.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Arizona State University ၏ SEFCOM မှ ထုတ်ပြန်သော အခမဲ့ဝင်ရောက်နိုင်သည့် binary exploitation နှင့် systems security သင်ရိုးဖြစ်သည်။</p>
+          <p>ဘီစီ ၁၇ မှ ၁၆ ရာစုအတွင်း Thera ကျွန်းရှိ နေထိုင်ရာဒေသကို ပွင့်ကျိုင်းမှုကြောင့် မြုပ်ခဲ့ပြီး ထိန်းသိမ်းထားခဲ့သည်။ ဗိသုကာ၊ ရေမြောင်းကွန်ရက်နှင့် ပင်လယ်ကူးသမားလူ့အဖွဲ့အစည်း၏ အသေးစိတ်ကို ရှာဖွေတွေ့ရှိမှုများဖြင့် ဖော်ပြသည်။ မှတ်ချက်: Smithsonian ၏ scraper ပိတ်ဆို့မှုကြောင့် ဤအကျဉ်းချုပ်သည် ခေါင်းစဉ်နှင့် ဖော်ပြချက်အပေါ် အခြေခံ၍ ပြုစုထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Binary exploitation</li>
-            <li>Systems security curriculum</li>
-            <li>Open-access education</li>
+            <li>Volcanic preservation (Thera / Santorini)</li>
+            <li>Bronze Age architecture</li>
+            <li>Drainage network engineering</li>
+            <li>Date range: 17th–16th century BCE</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://pwn.college/">မူရင်းဆိုက် ↗</a>
+          <a href="https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -230,20 +233,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">09</span>
       <div>
-        <h2 class="story-title">Tesla နှင့် SpaceX ပေါင်းစု $420B တန်ဖိုး ကျဆင်းခြင်း</h2>
-        <span class="src">techlaws.pages.dev</span>
+        <h2 class="story-title">Emoji ဗိသုကာ၏ ဆက်လက်ဖြစ်တည်မှုနှင့် အနာဂတ်</h2>
+        <span class="src">jenniferdaniel.substack.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ရွေးကောက်ပွဲနောက်ပိုင်း ဈေးကွက်ပြောင်းလဲမှုကြောင့် Tesla နှင့် SpaceX ၏ ပေါင်းစု market cap သည် နှစ်ရက်အတွင်း $420B ကျော် ဆုံးရှုံးခဲ့သည်ဟု ဆောင်းပါးက ဖော်ပြသည်။ Commercial aerospace contract နှင့် EV မူဝါဒ ထိတွေ့မှုကိုလည်း ခွဲခြမ်းစိတ်ဖြာသည်။</p>
+          <p>Unicode Consortium ၏ Jennifer Daniel က emoji ၏ အဓိပ္ပာယ် ပြောင်းလဲမှု၊ combinatoric emoji encoding နှင့် ဒစ်ဂျစ်တယ် tone signaling ၏ ပြောင်းလွယ်ပြင်လွယ်မှုကို ခွဲခြမ်းစိတ်ဖြာသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Market cap correction (~$420B combined)</li>
-            <li>Commercial aerospace contract exposure</li>
-            <li>EV policy exposure</li>
+            <li>Unicode emoji encoding</li>
+            <li>Combinatoric emoji sequences</li>
+            <li>Semantic shift analysis</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://techlaws.pages.dev/tesla-and-spacex-lose-over-420b-in-combined-market-cap-in-the-two-days/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://jenniferdaniel.substack.com/p/what-do-the-next-4000-emoji-look">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -251,19 +254,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">10</span>
       <div>
-        <h2 class="story-title">Window Sweaters — macOS အတွက် ထိုးထားသော UI ဘောင်များ</h2>
-        <span class="src">github.com/saragordic/window-sweaters</span>
+        <h2 class="story-title">မီးရှူးမီးရောင် အင်ဂျင်နီယာ၏ သမိုင်း — searchlight ပညာရပ်</h2>
+        <span class="src">computer.rip</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>macOS menu bar utility တစ်ခုဖြစ်ပြီး window များကို ထိုးထားသော (knitted) အလှဆင်ဘောင်များ ထည့်သွင်းပေးသည်။</p>
+          <p>Carbon-arc searchlight ၏ optics၊ စစ်ရေးရေဒါ ပေါင်းစပ်မှုနှင့် အရပ်သားလေကြောင်းပိုင်းတွင် projection အသုံးပြုပုံကို နည်းပညာသမိုင်းအရ ပြန်လည်သုံးသပ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>macOS menu bar utility</li>
-            <li>Custom window border decoration</li>
+            <li>Carbon-arc searchlight optics</li>
+            <li>Military radar integration</li>
+            <li>Civil aerospace light projection</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/saragordic/window-sweaters">GitHub repository ↗</a>
+          <a href="https://computer.rip/2026-10-25-searchlights.html">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
