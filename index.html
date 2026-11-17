@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၁၆။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၁၆</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၁၇။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၁၇</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">တနင်္လာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၁၆</span>
-    <div class="date-en">Monday, November 16, 2026</div>
+    <span class="eyebrow">အင်္ဂါနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၁၇</span>
+    <div class="date-en">Tuesday, November 17, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,21 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">uBlock Origin တွင် Element Picker မှတစ်ဆင့် Universal XSS</h2>
-        <span class="src">iter.ca</span>
+        <h2 class="story-title">Optimizely ပျက်စီးမှု — Zoom နှင့် GitLab တွင် malware ဝေငှခံရခြင်း</h2>
+        <span class="src">blog.report-uri.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>အန္တရာယ်ကြီးသော အားနည်းချက် (ယခု patch ပြီး) ဖြစ်သည်။ ဆိုးသွမ်းသော website တစ်ခုက Element Picker preview ကို ကိုင်တွယ်ပြီး filter rule များ ထည့်သွင်းကာ domain မျိုးစုံတွင် cross-origin JavaScript ကို run နိုင်သည်။</p>
+          <p>Optimizely tag library တွင် ဆိုးသော script ထည့်သွင်းခံရမှုကြောင့် Zoom နှင့် GitLab ကဲ့သို့ enterprise SaaS စာမျက်နှာများ ထိခိုက်ခဲ့သည်။ Session token များကို ခိုးယူခြင်းနှင့် developer endpoint များကို ပစ်မှတ်ထားခြင်း ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Universal cross-site scripting (UXSS)</li>
-            <li>Element Picker preview manipulation</li>
-            <li>Filter rule injection</li>
-            <li>Cross-origin JavaScript execution (patched)</li>
+            <li>Supply chain attack</li>
+            <li>Malicious script injection into tag library</li>
+            <li>Session token harvesting</li>
+            <li>Developer endpoint targeting</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://iter.ca/post/ubo-uxss/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -83,20 +83,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">Alibaba ၏ Qwen4-Max frontier model ကြေညာချက်</h2>
-        <span class="src">qwen.ai</span>
+        <h2 class="story-title">Windows 11 diagnostic telemetry က coding agent နှင့် dev tool များကို မှတ်တမ်းတင်</h2>
+        <span class="src">xusheng.dev</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Alibaba ၏ Qwen အဖွဲ့က နောက်မျိုးဆက် frontier model ဖြစ်သော Qwen4-Max ကို ကြေညာသည်။ Coding နှင့် အဆင့်ဆင့် reasoning ကို ဦးတည်ထားသော dense/MoE architecture ဖြစ်သည်။</p>
+          <p>Windows diagnostic telemetry က optional diagnostics အောက်တွင် လည်ပတ်နေသော AI coding agent များနှင့် developer toolchain များ၏ process များကို မှတ်တမ်းတင်ကြောင်း ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Qwen4-Max</li>
-            <li>Dense or Mixture-of-Experts (MoE) architecture</li>
-            <li>Coding and multi-step reasoning focus</li>
+            <li>Optional diagnostic telemetry</li>
+            <li>Process cataloging</li>
+            <li>AI coding agents</li>
+            <li>Developer toolchains</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://qwen.ai/blog?id=qwen4-max">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://xusheng.dev/posts/windows-coding-agent-telemetry/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -104,21 +105,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">သက်တမ်းကုန်ဆုံးသော custom domain များမှ ဟောင်း Bitly link များ ခိုးယူခံရခြင်း</h2>
-        <span class="src">ransomnews.com</span>
+        <h2 class="story-title">Credential မမျှဝေဘဲ coding agent များ လည်ပတ်ခြင်း (Lend Protocol)</h2>
+        <span class="src">blog.antonio.cx</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>တိုက်ခိုက်သူများက သက်တမ်းကုန်ဆုံးသွားသော vanity custom domain များနှင့် အသုံးမပြုတော့သော bit.ly short link များကို အသုံးချပြီး ရေပန်းစားသော ဟောင်း tweet နှင့် embed များကို malware သို့မဟုတ် phishing ပစ်မှတ်များသို့ redirect လုပ်သည်။</p>
+          <p>Zero-trust agent credential delegation ဖြင့် လျှို့ဝှက်ချက်များကို ဒေသတွင်း hardware ပေါ်တွင်သာ ထားရှိသည်။ Cryptographic approval prompt များဖြင့် အဆင့်ဆင့် အတည်ပြုစေသော ဒီဇိုင်း ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Expired vanity custom domains</li>
-            <li>Dormant bit.ly short links</li>
-            <li>Redirect hijacking</li>
-            <li>Malware and phishing redirection</li>
+            <li>Zero-trust credential delegation</li>
+            <li>Secrets kept on local hardware</li>
+            <li>Cryptographic approval prompts</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/">မူရင်းသတင်း ↗</a>
+          <a href="https://blog.antonio.cx/running-agents-with-lend">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -126,20 +126,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">Jensen Huang ထွက်ခွာပြီးနောက် Nvidia ၏ နောက်အဆင့်</h2>
-        <span class="src">steveblank.com</span>
+        <h2 class="story-title">Carnegie Mellon ၏ CS lecture များ YouTube တွင် အများပြည်သူ ဖွင့်ပေး</h2>
+        <span class="src">cs.cmu.edu</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Steve Blank က Jensen Huang ထွက်ခွာပြီးနောက် Nvidia ၏ architecture နှင့် အဖွဲ့အစည်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်ကို ရေးသားသည်။ Product-led pipeline နှင့် datacenter lock-in အပေါ် အာရုံစိုက်သည်။</p>
+          <p>Carnegie Mellon University က systems၊ compilers၊ distributed computing နှင့် algorithms ဆိုင်ရာ computer science lecture မော်ကွန်းများကို အပြည့်အစုံ ထုတ်ပြန်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Product-led pipeline</li>
-            <li>Datacenter lock-in</li>
-            <li>Post-leadership transition analysis</li>
+            <li>Systems and compilers</li>
+            <li>Distributed computing</li>
+            <li>Algorithms</li>
+            <li>Public YouTube lecture archive</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.cs.cmu.edu/learn/">မူရင်းစာမျက်နှာ ↗</a>
         </div>
       </div>
     </article>
@@ -147,20 +148,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">Tor Project ၏ 0.4.9.17 — DoS ကာကွယ်ရေး patch များ</h2>
-        <span class="src">forum.torproject.org</span>
+        <h2 class="story-title">OpenCode Browse — coding agent web automation နှင့် လူသား handoff</h2>
+        <span class="src">opencode.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Onion routing relay circuit များကို ရေရှည် distributed denial-of-service cell flood များမှ ကာကွယ်ရန် အရေးပေါ် လုံခြုံရေး release ဖြစ်သည်။</p>
+          <p>AI coding agent များအတွက် browser automation အလွှာ ဖြစ်ပြီး ရှိပြီးသား အသုံးပြုသူ session profile များကို အသုံးပြုသည်။ 2FA သို့မဟုတ် authentication အဆင့်များတွင် လူသားသို့ interactive handoff ပြုလုပ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Tor 0.4.9.17 security release</li>
-            <li>Onion routing relay circuits</li>
-            <li>DoS defense against cell floods</li>
+            <li>Browser automation layer for AI agents</li>
+            <li>Existing user session profiles</li>
+            <li>Interactive human handoff</li>
+            <li>2FA and authentication boundaries</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://forum.torproject.org/t/security-release-0-4-9-17/22454">မူရင်းကြေညာချက် ↗</a>
+          <a href="https://opencode.ai/product/browse">မူရင်းစာမျက်နှာ ↗</a>
         </div>
       </div>
     </article>
@@ -168,20 +170,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Protomaps — ရိုးရှင်းပြီး စျေးသက်သာသော self-hosted map tile များ</h2>
-        <span class="src">bruceroettgers.eu</span>
+        <h2 class="story-title">Apple macOS လုံခြုံရေးလမ်းညွှန် — Full Disk Access နှင့် system protection များ</h2>
+        <span class="src">support.apple.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ဖိုင်တစ်ခုတည်းဖြစ်သော PMTiles format ကို ပုံမှန် object storage နှင့် ပေါင်းစပ်ခြင်းဖြင့် ရှုပ်ထွေးသော tile server မလိုဘဲ vector tile map များကို စွမ်းဆောင်ရည်မြင့်စွာ host လုပ်နိုင်သည်။</p>
+          <p>TCC (Transparency, Consent, and Control) ခွင့်ပြုချက်များ၊ fine-grained folder sandboxing နှင့် System and App Protection override များအပေါ် လုံခြုံရေး ခွဲခြမ်းစိတ်ဖြာချက် ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>PMTiles single-file format</li>
-            <li>Commodity object storage hosting</li>
-            <li>Vector tile maps without tile servers</li>
+            <li>TCC permissions</li>
+            <li>Full Disk Access</li>
+            <li>Fine-grained folder sandboxing</li>
+            <li>System and App Protection overrides</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://bruceroettgers.eu/blog/protomaps/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://support.apple.com/en-us/149699">မူရင်းလမ်းညွှန် ↗</a>
         </div>
       </div>
     </article>
@@ -189,20 +192,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">ParadeDB — Postgres ထဲတွင် normalized relational search</h2>
-        <span class="src">paradedb.com</span>
+        <h2 class="story-title">BugMeNot ပိတ်သိမ်းခြင်း</h2>
+        <span class="src">bugmenot.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Elasticsearch သို့မဟုတ် OpenSearch cluster အပြင်ဘက်သို့ denormalize မလုပ်ဘဲ PostgreSQL join table များကို BM25 indexing ဖြင့် တိုက်ရိုက် ရှာဖွေနိုင်ပုံကို ဖော်ပြသည်။</p>
+          <p>၂၀၀၀ ပြည့်နှစ်များမှ ခေတ်ရေပန်းစားခဲ့သော shared account credential စာရင်းဝန်ဆောင်မှုဖြစ်သည့် BugMeNot သည် နှစ်ပေါင်းနှစ်ဆယ်ကျော် လည်ပတ်ပြီးနောက် လုပ်ငန်းရပ်ဆိုင်းသည်။ မဖြစ်မနေ web signup များကို ဆန့်ကျင်ခဲ့သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>PostgreSQL joined table search</li>
-            <li>BM25 indexing</li>
-            <li>No external Elasticsearch or OpenSearch cluster</li>
+            <li>Shared account credentials</li>
+            <li>Compulsory web signup workaround</li>
+            <li>Over two decades of operation</li>
+            <li>Service shutdown</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.paradedb.com/blog/joins">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://www.bugmenot.com/">မူရင်းဆိုက် ↗</a>
         </div>
       </div>
     </article>
@@ -210,20 +214,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">Internet Archive က Salon သတင်းလွှာ ၃၀ နှစ်စာ ထိန်းသိမ်း</h2>
-        <span class="src">blog.archive.org</span>
+        <h2 class="story-title">Mem AI workspace ပိတ်သိမ်းမည် — ဒေတာထုတ်ယူရန် နောက်ဆုံးရက် Friday, January 15, 2027</h2>
+        <span class="src">get.mem.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Wayback Machine က ဆောင်းပါး ၂၅၀,၀၀၀ ကျော်ကို index လုပ်ထားပြီး digital news archive များကို bitrot နှင့် publisher ဖျက်သိမ်းမှုများမှ ကာကွယ်သည်။</p>
+          <p>Note-taking နှင့် အလိုအလျောက် knowledge workspace ဖြစ်သော Mem သည် လုံးဝ ပိတ်သိမ်းမည်ဟု ကြေညာခဲ့ပြီး ဒေတာ export ပြုလုပ်ရန် နောက်ဆုံးရက်မှာ Friday, January 15, 2027 ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Wayback Machine indexing</li>
-            <li>Over 250,000 articles archived</li>
-            <li>Protection against bitrot and takedowns</li>
+            <li>Complete service sunset</li>
+            <li>Data export deadline: Friday, January 15, 2027</li>
+            <li>Automated knowledge workspace</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://get.mem.ai/blog/mem-is-shutting-down">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -231,20 +235,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">09</span>
       <div>
-        <h2 class="story-title">Coles Group ၏ cybersecurity အဖြစ်အပျက် စုံစမ်းစစ်ဆေးမှု</h2>
-        <span class="src">colesgroup.com.au</span>
+        <h2 class="story-title">TRMNL Frame — 31.5 လက်မ color ePaper ဖော်ပြကိရိယာ</h2>
+        <span class="src">trmnl.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>သြစတြေလျရှိ လက်လီကုန်သွယ်ရေးကြီး Coles Group က ခွင့်မပြုသော network လှုပ်ရှားမှုကို စုံစမ်းနေသည်။ ထို့အပြိုင် customer data integrity နှင့် point-of-sale ခံနိုင်ရည်ကို စစ်ဆေးနေသည်။</p>
+          <p>ပါဝါနည်းသော 31.5 လက်မ color electronic paper display ကို wireless ချိတ်ဆက်မှုနှင့် hack ပြုလုပ်နိုင်သော custom firmware ဖြင့် ambient dashboard အတွက် ထုတ်ပြန်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Unauthorized network activity investigation</li>
-            <li>Customer data integrity audit</li>
-            <li>Point-of-sale resilience review</li>
+            <li>31.5-inch color ePaper display</li>
+            <li>Ultra-low power consumption</li>
+            <li>Wireless connectivity</li>
+            <li>Hackable custom firmware</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.colesgroup.com.au/updates/">မူရင်းအပ်ဒိတ် ↗</a>
+          <a href="https://trmnl.com/blog/introducing-frame">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -252,20 +257,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">10</span>
       <div>
-        <h2 class="story-title">ဆေးဘက်ဆိုင်ရာ သမိုင်း — ၁၉၇၇ Laetrile ကင်ဆာ “ကုထုံး” အံ့ဩဖွယ်ရာ ဖြစ်စဉ်</h2>
-        <span class="src">slate.com</span>
+        <h2 class="story-title">ဓာတုဗေဒကို ဂျီသြမေတြီအဖြစ် — ဓာတ်ပြုမှု network ဖွဲ့စည်းပုံများ</h2>
+        <span class="src">chillphysicsenjoyer.substack.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Laetrile ကို ကင်ဆာကုထုံးအဖြစ် ပြန့်ပွားခဲ့ပုံ၊ clinical trial များက ငြင်းပယ်ခဲ့ပုံ၊ consumer pseudoscience လှုပ်ရှားမှုနှင့် regulatory enforcement သမိုင်းကို ဆန်းစစ်ထားသည်။</p>
+          <p>Graph theory၊ reaction network နှင့် topological geometric ကိုယ်စားပြုမှုများမှတစ်ဆင့် ဓာတ်ပြုမှုများကို နက်နက်နဲနဲ ရှာဖွေထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Laetrile clinical trial repudiation</li>
-            <li>Consumer pseudoscience movement</li>
-            <li>Regulatory enforcement history</li>
+            <li>Graph theory</li>
+            <li>Reaction networks</li>
+            <li>Topological geometric representations</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://slate.com/technology/2026/11/doctor-medicine-cancer-cure-pill-history.html">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
