@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၀။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၀</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၁။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၁</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">သောကြာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၀</span>
-    <div class="date-en">Friday, November 20, 2026</div>
+    <span class="eyebrow">စနေနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၁</span>
+    <div class="date-en">Saturday, November 21, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,22 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">OpenSSL — EVP_EncodeBlock() တွင် buffer overflow အန္တရာယ်ကြီး (CVE-2026-121481)</h2>
-        <span class="src">github.com/openssl</span>
+        <h2 class="story-title">Valkey သည် skiplist ကို B+ tree ဖြင့် အစားထိုး၊ sorted set overhead ~43% အထိ လျှော့ချ</h2>
+        <span class="src">valkey.io</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>OpenSSL ၏ Base64 encoding routine ဖြစ်သော EVP_EncodeBlock() တွင် ဝေးလံမှ memory corruption ဖြစ်စေနိုင်သော အန္တရာယ်ကြီးသည့် အားနည်းချက်ကို တွေ့ရှိထားသည်။ CVSS ရမှတ် 9.8 ရှိပြီး ပြင်ဆင်ချက် PR ကို ဆက်လက် စစ်ဆေးနေဆဲ ဖြစ်သည်။</p>
+          <p>Valkey က sorted set အတွက် skiplist ကို cache ကို ထိရောက်စွာ အသုံးပြုနိုင်သော B+ tree ဖြင့် အစားထိုးခဲ့ပြီး memory footprint ကို လျှော့ချကာ memory locality ကို တိုးတက်စေသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>CVE-2026-121481</li>
-            <li>CVSS 9.8 (critical)</li>
-            <li>Buffer overflow in EVP_EncodeBlock()</li>
-            <li>Remote memory corruption</li>
-            <li>Patch pull request under review</li>
+            <li>Skiplist replaced by B+ tree</li>
+            <li>Sorted set data structure</li>
+            <li>Cache-conscious memory layout</li>
+            <li>Up to 43% lower sorted set overhead</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/openssl/openssl/pull/33652">မူရင်း PR ↗</a>
+          <a href="https://valkey.io/blog/from-skiplist-to-b+tree/">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -84,21 +83,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">Gemini 4 Neon သည် Models Engineering Index (MEI) တွင် ပထမနေရာ ရယူ</h2>
-        <span class="src">git-aarvin.github.io</span>
+        <h2 class="story-title">ဘာသာစကားမော်ဒယ်များက မိမိ weight များကို ကိုယ်တိုင် ပြန်ရေးနိုင်</h2>
+        <span class="src">arxiv.org</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Google ၏ မော်ဒယ်အသစ်သည် engineering အာရုံစိုက်သော benchmark များတွင် ထိပ်တန်းနေရာကို ရယူခဲ့ပြီး coding architecture နှင့် reasoning တွင် ပြိုင်ဘက်များကို ကျော်တက်သည်။</p>
+          <p>Retraining မလုပ်ဘဲ neural model များ၏ weight အဆင့်တွင် ကိုယ်တိုင်ပြင်ဆင်နိုင်ကြောင်း လေ့လာသည့် သုတေသနဖြစ်ပြီး parameter ပစ်မှတ်ထား update များကို ပြသထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Models Engineering Index (MEI)</li>
-            <li>Engineering-focused benchmarks</li>
-            <li>Coding architectures</li>
-            <li>Reasoning evaluation</li>
+            <li>Weight-level self-modification</li>
+            <li>Targeted parameter updates</li>
+            <li>No full retraining required</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://git-aarvin.github.io/mei/">မူရင်းစာမျက်နှာ ↗</a>
+          <a href="https://arxiv.org/abs/2611.21885">မူရင်းစာတမ်း ↗</a>
         </div>
       </div>
     </article>
@@ -106,20 +104,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">Claude က သီအိုရီ black hole ရူပဗေဒ၏ ပြဿနာ နှစ်ခုကို ဖြေရှင်း</h2>
-        <span class="src">anthropic.com</span>
+        <h2 class="story-title">Generalized Riemann Hypothesis (GRH) သက်သေအရေး — ရပ်ရွာ သုံးသပ်ချက်နှင့် Terence Tao ၏ ခွဲခြမ်းချက်</h2>
+        <span class="src">terrytao.wordpress.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Anthropic ၏ သုတေသနအရ Claude သည် quantum gravity မော်ဒယ်များနှင့် black hole entropy တွက်ချက်မှုများအတွက် သင်္ချာဆိုင်ရာ ဖြေရှင်းချက်များကို ရရှိခဲ့ကြောင်း ဖော်ပြသည်။</p>
+          <p>Alessandro Masullo နှင့် Levent Alpöge တို့၏ GRH ဆိုင်ရာ သက်သေအခိုင်အမာ တင်ပြချက်ကို သင်္ချာအသိုင်းအဝိုင်းက သုံးသပ်နေသည်။ Terence Tao က fluid singularity နှင့် analytic number theory သက်သေများအကြောင်း မှတ်ချက်ပေးထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Quantum gravity models</li>
-            <li>Black hole entropy calculation</li>
-            <li>Mathematical derivation by LLM</li>
+            <li>Generalized Riemann Hypothesis (GRH)</li>
+            <li>Analytic number theory</li>
+            <li>Fluid singularities (Euler and Navier-Stokes)</li>
+            <li>Community peer review</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.anthropic.com/research/claude-black-hole-physics">မူရင်းသုတေသန ↗</a>
+          <a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -127,21 +126,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">Postgres 19 native repack — ပြင်ပ pg_repack မလိုဘဲ table bloat ရှင်းလင်း</h2>
-        <span class="src">snowflake.com</span>
+        <h2 class="story-title">Inkling 2 Mini — laptop နှင့် edge စက်များအတွက် open-weight reasoning မော်ဒယ်</h2>
+        <span class="src">thinkingmachines.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Snowflake engineering က Postgres 19 တွင် အဆိုပြုထားသော native repack engine ကို ရှင်းပြသည်။ ၎င်းသည် third-party pg_repack ကို အစားထိုးပြီး zero-downtime VACUUM လုပ်ငန်းများကို ပံ့ပိုးမည်ဖြစ်သည်။</p>
+          <p>Thinking Machines Lab က reasoning၊ code synthesis နှင့် low-latency inference အတွက် ပြင်ဆင်ထားသော ထိရောက်သည့် open-weight local မော်ဒယ် Inkling 2 Mini ကို ထုတ်ပြန်သည်။ Apple Silicon နှင့် consumer hardware ပေါ်တွင် အသုံးပြုရန် ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Postgres 19 proposed native repack</li>
-            <li>Replaces third-party pg_repack</li>
-            <li>Zero-downtime VACUUM operations</li>
-            <li>Table bloat cleanup</li>
+            <li>Open-weight compact model</li>
+            <li>Reasoning and code synthesis</li>
+            <li>Low-latency local inference</li>
+            <li>Apple Silicon and consumer hardware</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://thinkingmachines.ai/news/inkling-2-mini/">မူရင်းကြေညာချက် ↗</a>
         </div>
       </div>
     </article>
@@ -149,20 +148,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">Anthropic ၏ Nasdaq IPO ပွဲဦးထွက်</h2>
-        <span class="src">reuters.com</span>
+        <h2 class="story-title">AI coding agent များကြောင့် developer များ systems architect ဖြစ်လာခြင်း</h2>
+        <span class="src">manidoraisamy.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Anthropic ၏ ပွဲဦးထွက် အများပြည်သူ ရှယ်ယာဈေးကွက် ဝင်ရောက်မှုကို ဆန်းစစ်ထားသည်။ AI capital expenditure ကို တင်းကျပ်စွာ စစ်ဆေးနေချိန်တွင် ဖြစ်ပြီး ၎င်း၏ ငွေကြေးနှင့် နည်းပညာဆိုင်ရာ အနေအထားကို ခွဲခြမ်းထားသည်။</p>
+          <p>Developer များသည် syntax ကို တိုက်ရိုက်ရေးခြင်းမှ architectural constraint ဒီဇိုင်း၊ invariant ပြဌာန်းခြင်းနှင့် အလိုအလျောက် review pipeline များဆီသို့ ကူးပြောင်းနေကြောင်း ခွဲခြမ်းစိတ်ဖြာထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Nasdaq public listing debut</li>
-            <li>AI capital expenditure scrutiny</li>
-            <li>Financial and technical analysis</li>
+            <li>Architectural constraint design</li>
+            <li>Invariant enforcement</li>
+            <li>Automated review pipelines</li>
+            <li>AI coding agents</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/">မူရင်းသတင်း ↗</a>
+          <a href="https://manidoraisamy.com/developer-to-architect.html">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -170,20 +170,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Vint Cerf — TCP/IP ကို ဘာကြောင့် patent မတင်ခဲ့သလဲ</h2>
-        <span class="src">seremot.com</span>
+        <h2 class="story-title">Clojure — ဖွဲ့စည်းပုံ အတွေးအခေါ်ကို ပြောင်းလဲစေသော functional programming</h2>
+        <span class="src">eli.thegreenplace.net</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ARPANET နှင့် Internet ၏ အခြေခံ protocol များကို IP လိုင်စင်ခ အောက်တွင် မကျရောက်စေဘဲ ပွင့်လင်းစွာ ထားရှိခဲ့ပုံကို သမိုင်းနှင့် ပုဂ္ဂိုလ်ရေးမှတ်ဉာဏ်ဖြင့် ရှင်းပြထားသည်။</p>
+          <p>Lisp ၏ immutability၊ REPL ဖြင့် အပြန်အလှန်လုပ်ဆောင်သော workflow နှင့် concurrency primitive များက distributed systems အင်ဂျင်နီယာ အတွေးအခေါ်ကို မည်သို့ သက်ရောက်စေသည်ကို ပြန်လည်သုံးသပ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>TCP/IP open protocol design</li>
-            <li>ARPANET history</li>
-            <li>No IP licensing encumbrance</li>
+            <li>Lisp immutability</li>
+            <li>REPL-driven interactive development</li>
+            <li>Concurrency primitives</li>
+            <li>Functional systems programming</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://seremot.com/p/vint-cerf-on-why-tcpip-was-never">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -191,21 +192,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">Smart home ကို cloud မလိုဘဲ ပြန်လည်တည်ဆောက်ခြင်း — ဂိတ်တံခါး local automation</h2>
-        <span class="src">blog.harrison.page</span>
+        <h2 class="story-title">ESA Hera မစ်ရှင်နှင့် Brian May — Didymos ကြယ်ငယ် 3D stereoscopic ပုံဖော်ခြင်း</h2>
+        <span class="src">esa.int</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Proprietary cloud နှင့် ချိတ်ဆက်ထားသော IoT firmware ကို microcontroller relay ဖြင့် local ဖြစ်အောင် အစားထိုးပြီး private push notification ဖြင့် vendor ကြော်ငြာ telemetry ကို ရှောင်ရှားသော homelab လမ်းညွှန် ဖြစ်သည်။</p>
+          <p>ဂြိုဟ်သားကာကွယ်ရေး spacecraft Hera က multi-angle ပုံများကို ရိုက်ယူပြီး Didymos binary asteroid စနစ်၏ သိပ္ပံဆိုင်ရာ 3D stereoscopic မော်ဒယ်အဖြစ် ပေါင်းစပ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Local microcontroller relay control</li>
-            <li>Replacing cloud-tethered IoT firmware</li>
-            <li>Private push notifications</li>
-            <li>Eliminating vendor ad telemetry</li>
+            <li>ESA Hera spacecraft</li>
+            <li>Didymos binary asteroid system</li>
+            <li>Multi-angle imaging</li>
+            <li>3D stereoscopic reconstruction</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://blog.harrison.page/garage-door-spam/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -213,62 +214,20 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">DeepMind — AGI ပြီးနောက် ဘာရှိမလဲ</h2>
-        <span class="src">institute.deepmind.com</span>
+        <h2 class="story-title">NINLIVE archive — lossless live audio နှင့် archival infrastructure</h2>
+        <span class="src">ninlive.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Formal definition များ၊ autonomous verification architecture များနှင့် လူ့အဆင့် cognitive parity ကျော်လွန်သော governance လမ်းကြောင်းများကို စဉ်းစားသည့် နည်းပညာဆိုင်ရာ စာတမ်း ဖြစ်သည်။</p>
+          <p>ဆယ်စုနှစ်များစွာ ကွန်ဆာတ် အသံ၊ bootleg နှင့် live soundboard telemetry များကို ထိန်းသိမ်းနိုင်သော archival နှင့် streaming architecture ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Formal definitions of AGI</li>
-            <li>Autonomous verification architecture</li>
-            <li>Governance pathways</li>
+            <li>Lossless live audio archive</li>
+            <li>Archival and streaming architecture</li>
+            <li>Live soundboard telemetry</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://institute.deepmind.com/essays/what-comes-after-agi/">မူရင်းစာတမ်း ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="story">
-      <span class="rank">09</span>
-      <div>
-        <h2 class="story-title">MIT OpenCourseWare — How to CAD Almost Anything</h2>
-        <span class="src">ocw.mit.edu</span>
-        <div class="body">
-          <span class="label">အကျဉ်းချုပ်</span>
-          <p>MIT ၏ engineering workshop သင်ခန်းစာ ဖြစ်ပြီး ရုပ်ပိုင်းဆိုင်ရာ ယန္တရားများကို reverse-engineering ပြုလုပ်ကာ parametric CAD model များအဖြစ် ပြောင်းလဲနည်းကို သင်ကြားသည်။</p>
-          <span class="label">နည်းပညာ အချက်များ</span>
-          <ul class="specs">
-            <li>Reverse engineering physical mechanisms</li>
-            <li>Parametric CAD modeling</li>
-            <li>3D modeling workshop curriculum</li>
-          </ul>
-        </div>
-        <div class="links">
-          <a href="https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/">မူရင်းသင်ခန်းစာ ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="story">
-      <span class="rank">10</span>
-      <div>
-        <h2 class="story-title">ကင်ဆာ သုတေသန — engineered oncolytic virus ဖြင့် pancreatic ခန္ဓာအတွင်းဆိုင်ရာ အကျိတ်များ ရပ်တန့်</h2>
-        <span class="src">newscientist.com</span>
-        <div class="body">
-          <span class="label">အကျဉ်းချုပ်</span>
-          <p>Early-phase ဆေးရုံ safety trial တွင် ပြင်ဆင်ထားသော virus တစ်မျိုးဖြင့် လူနာ သုံးဦး၏ အကျိတ်များ ပွားများမှု ရပ်တန့်သွားကြောင်း ဖော်ပြသည်။ ဆေးဝါးကုသမှု အတွက် ကနဦး အချက်အလက် ဖြစ်သည်။</p>
-          <span class="label">နည်းပညာ အချက်များ</span>
-          <ul class="specs">
-            <li>Engineered oncolytic virus</li>
-            <li>Early-phase clinical safety trial</li>
-            <li>Pancreatic tumor proliferation halted in three patients</li>
-          </ul>
-        </div>
-        <div class="links">
-          <a href="https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/">မူရင်းသတင်း ↗</a>
+          <a href="https://ninlive.com/">မူရင်းစာမျက်နှာ ↗</a>
         </div>
       </div>
     </article>
