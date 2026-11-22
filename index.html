@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၁။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၁</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၂။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၂</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">စနေနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၁</span>
-    <div class="date-en">Saturday, November 21, 2026</div>
+    <span class="eyebrow">တနင်္ဂနွေနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၂</span>
+    <div class="date-en">Sunday, November 22, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,21 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">Valkey သည် skiplist ကို B+ tree ဖြင့် အစားထိုး၊ sorted set overhead ~43% အထိ လျှော့ချ</h2>
-        <span class="src">valkey.io</span>
+        <h2 class="story-title">Lean Prover အသိုင်းအဝိုင်း — Riemann Hypothesis ၏ formal machine verification</h2>
+        <span class="src">leanprover-community.github.io</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Valkey က sorted set အတွက် skiplist ကို cache ကို ထိရောက်စွာ အသုံးပြုနိုင်သော B+ tree ဖြင့် အစားထိုးခဲ့ပြီး memory footprint ကို လျှော့ချကာ memory locality ကို တိုးတက်စေသည်။</p>
+          <p>Mathlib နှင့် Lean prover အသိုင်းအဝိုင်းက Riemann Hypothesis ၏ formalized proof ကို လွတ်လပ်စွာ machine-check ပြီး compile အောင်မြင်ကြောင်း ကြေညာသည်။ Interactive theorem prover တွင် logical consistency ကို အတည်ပြုထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Skiplist replaced by B+ tree</li>
-            <li>Sorted set data structure</li>
-            <li>Cache-conscious memory layout</li>
-            <li>Up to 43% lower sorted set overhead</li>
+            <li>Lean theorem prover</li>
+            <li>Mathlib library</li>
+            <li>Formal machine verification</li>
+            <li>Riemann Hypothesis</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://valkey.io/blog/from-skiplist-to-b+tree/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -83,20 +83,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">ဘာသာစကားမော်ဒယ်များက မိမိ weight များကို ကိုယ်တိုင် ပြန်ရေးနိုင်</h2>
-        <span class="src">arxiv.org</span>
+        <h2 class="story-title">OpenRouter — inference provider များ၏ data processing ပြဿနာ လုံခြုံရေး သတိပေးချက်</h2>
+        <span class="src">openrouter.ai</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Retraining မလုပ်ဘဲ neural model များ၏ weight အဆင့်တွင် ကိုယ်တိုင်ပြင်ဆင်နိုင်ကြောင်း လေ့လာသည့် သုတေသနဖြစ်ပြီး parameter ပစ်မှတ်ထား update များကို ပြသထားသည်။</p>
+          <p>OpenRouter က third-party inference endpoint များတွင် customer telemetry ယိုဖိတ်မှုနှင့် data-handling integrity ချို့ယွင်းမှုများကို အစီရင်ခံသည်။ ထို့ကြောင့် provider များကို အရေးပေါ် ဖယ်ရှားခြင်းနှင့် audit workflow များ လုပ်ဆောင်နေသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Weight-level self-modification</li>
-            <li>Targeted parameter updates</li>
-            <li>No full retraining required</li>
+            <li>Cloud LLM inference providers</li>
+            <li>Customer telemetry leakage</li>
+            <li>Data-handling integrity failures</li>
+            <li>Emergency provider de-listing and audit</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://arxiv.org/abs/2611.21885">မူရင်းစာတမ်း ↗</a>
+          <a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/">မူရင်းကြေညာချက် ↗</a>
         </div>
       </div>
     </article>
@@ -104,21 +105,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">Generalized Riemann Hypothesis (GRH) သက်သေအရေး — ရပ်ရွာ သုံးသပ်ချက်နှင့် Terence Tao ၏ ခွဲခြမ်းချက်</h2>
-        <span class="src">terrytao.wordpress.com</span>
+        <h2 class="story-title">Inkling-2-Mini quantization — Apple Silicon ပေါ်တွင် 5.4 GB memory ဖြင့် reasoning</h2>
+        <span class="src">github.com/ShinMegamiBoson</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Alessandro Masullo နှင့် Levent Alpöge တို့၏ GRH ဆိုင်ရာ သက်သေအခိုင်အမာ တင်ပြချက်ကို သင်္ချာအသိုင်းအဝိုင်းက သုံးသပ်နေသည်။ Terence Tao က fluid singularity နှင့် analytic number theory သက်သေများအကြောင်း မှတ်ချက်ပေးထားသည်။</p>
+          <p>lookatmyquant open-source quantization suite က Inkling-2-Mini ကို 4-bit အထိ ကြီးမားစွာ compress လုပ်ပြီး M-series chip များ၏ unified memory 5.4 GB အတွင်း reasoning နှင့် coding စွမ်းရည်ကို ထိန်းသိမ်းနိုင်ကြောင်း ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Generalized Riemann Hypothesis (GRH)</li>
-            <li>Analytic number theory</li>
-            <li>Fluid singularities (Euler and Navier-Stokes)</li>
-            <li>Community peer review</li>
+            <li>4-bit quantization</li>
+            <li>Inkling-2-Mini model</li>
+            <li>Apple Silicon unified memory (5.4 GB)</li>
+            <li>Reasoning and code generation</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://github.com/ShinMegamiBoson/lookatmyquant">မူရင်း repository ↗</a>
         </div>
       </div>
     </article>
@@ -126,21 +127,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">Inkling 2 Mini — laptop နှင့် edge စက်များအတွက် open-weight reasoning မော်ဒယ်</h2>
-        <span class="src">thinkingmachines.ai</span>
+        <h2 class="story-title">PcapAnalyzer — self-hosted network packet inspector (heuristic detector ၂၇ ခု)</h2>
+        <span class="src">github.com/sebaandrada-cell</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Thinking Machines Lab က reasoning၊ code synthesis နှင့် low-latency inference အတွက် ပြင်ဆင်ထားသော ထိရောက်သည့် open-weight local မော်ဒယ် Inkling 2 Mini ကို ထုတ်ပြန်သည်။ Apple Silicon နှင့် consumer hardware ပေါ်တွင် အသုံးပြုရန် ဖြစ်သည်။</p>
+          <p>Third-party telemetry မသုံးဘဲ ကိုယ်ပိုင် server တွင် run နိုင်သော packet capture analysis engine ဖြစ်သည်။ Microburst၊ TCP retransmission၊ TLS handshake latency နှင့် network anomaly များကို rule-based detector ၂၇ ခုဖြင့် ရှာဖွေသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Open-weight compact model</li>
-            <li>Reasoning and code synthesis</li>
-            <li>Low-latency local inference</li>
-            <li>Apple Silicon and consumer hardware</li>
+            <li>Self-hosted packet capture analysis</li>
+            <li>27 rule-based heuristic detectors</li>
+            <li>Microburst and TCP retransmission detection</li>
+            <li>TLS handshake latency analysis</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://thinkingmachines.ai/news/inkling-2-mini/">မူရင်းကြေညာချက် ↗</a>
+          <a href="https://github.com/sebaandrada-cell/PcapAnalyzer">မူရင်း repository ↗</a>
         </div>
       </div>
     </article>
@@ -148,21 +149,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">AI coding agent များကြောင့် developer များ systems architect ဖြစ်လာခြင်း</h2>
-        <span class="src">manidoraisamy.com</span>
+        <h2 class="story-title">Leonida — Xbox executable ကို native PC သို့ static binary recompilation</h2>
+        <span class="src">github.com/ItsNotRexed</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Developer များသည် syntax ကို တိုက်ရိုက်ရေးခြင်းမှ architectural constraint ဒီဇိုင်း၊ invariant ပြဌာန်းခြင်းနှင့် အလိုအလျောက် review pipeline များဆီသို့ ကူးပြောင်းနေကြောင်း ခွဲခြမ်းစိတ်ဖြာထားသည်။</p>
+          <p>နောက်မျိုးဆက် console binary များကို native PC ပေါ်တွင် တိုက်ရိုက် run နိုင်ရန် binary translation နှင့် shader recompilation ကို စမ်းသပ်သော reverse engineering စီမံကိန်း ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Architectural constraint design</li>
-            <li>Invariant enforcement</li>
-            <li>Automated review pipelines</li>
-            <li>AI coding agents</li>
+            <li>Static binary recompilation</li>
+            <li>Direct binary translation</li>
+            <li>Shader recompilation</li>
+            <li>Reverse engineering</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://manidoraisamy.com/developer-to-architect.html">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://github.com/ItsNotRexed/Leonida">မူရင်း repository ↗</a>
         </div>
       </div>
     </article>
@@ -170,21 +171,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Clojure — ဖွဲ့စည်းပုံ အတွေးအခေါ်ကို ပြောင်းလဲစေသော functional programming</h2>
-        <span class="src">eli.thegreenplace.net</span>
+        <h2 class="story-title">Daraxonrasib — pancreatic cancer ကုသမှုတွင် သိသာသော တုံ့ပြန်မှု</h2>
+        <span class="src">theguardian.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Lisp ၏ immutability၊ REPL ဖြင့် အပြန်အလှန်လုပ်ဆောင်သော workflow နှင့် concurrency primitive များက distributed systems အင်ဂျင်နီယာ အတွေးအခေါ်ကို မည်သို့ သက်ရောက်စေသည်ကို ပြန်လည်သုံးသပ်ထားသည်။</p>
+          <p>Small-molecule inhibitor daraxonrasib ၏ Phase I/II ဆေးရုံ စမ်းသပ်မှုများက advanced pancreatic ductal adenocarcinoma တွင် အကျိတ်တိုးတက်မှုကို သိသာစွာ ဟန့်တားနိုင်ကြောင်း ပြသသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Lisp immutability</li>
-            <li>REPL-driven interactive development</li>
-            <li>Concurrency primitives</li>
-            <li>Functional systems programming</li>
+            <li>Daraxonrasib small-molecule inhibitor</li>
+            <li>Phase I/II clinical trials</li>
+            <li>Pancreatic ductal adenocarcinoma</li>
+            <li>Significant tumor suppression</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -192,21 +193,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">ESA Hera မစ်ရှင်နှင့် Brian May — Didymos ကြယ်ငယ် 3D stereoscopic ပုံဖော်ခြင်း</h2>
-        <span class="src">esa.int</span>
+        <h2 class="story-title">Toyota၊ Nissan နှင့် Honda — ကားအစိတ်အပိုင်း architecture များ တစ်ပြေးညီ ပြုလုပ်</h2>
+        <span class="src">caranddriver.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ဂြိုဟ်သားကာကွယ်ရေး spacecraft Hera က multi-angle ပုံများကို ရိုက်ယူပြီး Didymos binary asteroid စနစ်၏ သိပ္ပံဆိုင်ရာ 3D stereoscopic မော်ဒယ်အဖြစ် ပေါင်းစပ်ထားသည်။</p>
+          <p>ဂျပန်ကားကုမ္ပဏီ သုံးခုက hardware sub-assembly၊ ECU၊ wiring harness spec နှင့် ပစ္စည်းများကို စံသတ်မှတ်ရန် consortium ဖွဲ့စည်းကာ supply chain ကွဲပြားမှုကို လျှော့ချရန် ရည်ရွယ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>ESA Hera spacecraft</li>
-            <li>Didymos binary asteroid system</li>
-            <li>Multi-angle imaging</li>
-            <li>3D stereoscopic reconstruction</li>
+            <li>Hardware sub-assembly standardization</li>
+            <li>ECU (Electronic Control Unit)</li>
+            <li>Wiring harness specifications</li>
+            <li>Supply-chain fragmentation reduction</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -214,20 +215,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">NINLIVE archive — lossless live audio နှင့် archival infrastructure</h2>
-        <span class="src">ninlive.com</span>
+        <h2 class="story-title">Lead azide ၏ controlled detonation ခွဲခြမ်းစိတ်ဖြာချက်</h2>
+        <span class="src">science.org</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ဆယ်စုနှစ်များစွာ ကွန်ဆာတ် အသံ၊ bootleg နှင့် live soundboard telemetry များကို ထိန်းသိမ်းနိုင်သော archival နှင့် streaming architecture ဖြစ်သည်။</p>
+          <p>Primary explosive ဖြစ်သော lead azide ၏ detonation dynamics၊ shock wave ပျံ့နှံ့မှုနှင့် crystal structure တည်ငြိမ်မှုကို ခွဲခြမ်းသည့် chemistry သုတေသန ဖြစ်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Lossless live audio archive</li>
-            <li>Archival and streaming architecture</li>
-            <li>Live soundboard telemetry</li>
+            <li>Lead azide primary explosive</li>
+            <li>Detonation dynamics</li>
+            <li>Shock wave propagation</li>
+            <li>Crystal structure stability</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://ninlive.com/">မူရင်းစာမျက်နှာ ↗</a>
+          <a href="https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
