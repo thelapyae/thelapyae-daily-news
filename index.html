@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၆။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၆</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၇။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၇</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">ကြာသပတေးနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၆</span>
-    <div class="date-en">Thursday, November 26, 2026</div>
+    <span class="eyebrow">သောကြာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၇</span>
+    <div class="date-en">Friday, November 27, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,21 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">Scott Aaronson — Matrix multiplication ရှေ့ရောက်တိုးတက်မှု နှင့် tensor rank ဆိုင်ရာ သုံးသပ်ချက်</h2>
-        <span class="src">scottaaronson.blog</span>
+        <h2 class="story-title">llama.cpp အတွက် AMD-သီးသန့် optimization fork</h2>
+        <span class="src">devnull.land</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Scott Aaronson က Θ(n^2.25) matrix multiplication complexity bound ၏ သက်ရောက်မှုကို ခွဲခြမ်းသည်။ tensor rank လျှော့ချမှုများနှင့် automated reasoning မှတ်တိုင်များက သီအိုရီ computational complexity အတွက် ဘာကိုဆိုလိုသည်ကို စဉ်းစားသည်။</p>
+          <p>ဆော့ဖ်ဝဲရေးသူတစ်ဦးက AMD Radeon နှင့် Instinct hardware အတွက် ROCm/HIP ပုံစံ kernel များနှင့် memory access optimization များကို llama.cpp အတွက် ထုတ်ပြန်ထားသည်။ Token generation နှင့် prompt-eval latency တို့ကို သိသိသာသာ မြန်ဆန်စေသည်ဟု ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Matrix multiplication complexity bound</li>
-            <li>Θ(n^2.25) exponent</li>
-            <li>Tensor rank reduction</li>
-            <li>Automated reasoning milestones</li>
+            <li>llama.cpp inference runtime</li>
+            <li>ROCm and HIP kernels</li>
+            <li>AMD Radeon and Instinct GPUs</li>
+            <li>Token generation and prompt-eval latency</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://scottaaronson.blog/?p=10379">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://devnull.land/amd-specific-llama-cpp">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -83,21 +83,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">1Password — infrastructure လုံခြုံရေး ဖြစ်ရပ် ထုတ်ပြန်ချက်</h2>
-        <span class="src">1password.com</span>
+        <h2 class="story-title">LLM API ဝန်ဆောင်မှုအချို့သည် ByteDance Ark ၏ wrapper များဖြစ်ကြောင်း စုံစမ်းတွေ့ရှိ</h2>
+        <span class="src">kendell.dev</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>1Password က ၂၀၂၆ နိုဝင်ဘာတွင် ဖြစ်ပွားသော infrastructure အဆင့် လုံခြုံရေး ဖြစ်ရပ်ကို အစီရင်ခံသည်။ telemetry log များ၊ blast radius ခွဲခြမ်းချက်နှင့် master encryption key နှင့် user vault များ မပျက်စီးကြောင်း အတည်ပြုချက်ကို ဖော်ပြသည်။</p>
+          <p>Reverse-engineering ခွဲခြမ်းချက်အရ Novita နှင့် StreamLake ကဲ့သို့ LLM API ဝန်ဆောင်မှုများသည် ByteDance Ark အခြေခံအဆောက်အအုံအပေါ် white-label proxy wrapper များအဖြစ် လည်ပတ်နေကြောင်း တွေ့ရသည်။ Telemetry လမ်းကြောင်းနှင့် data boundary ဆိုင်ရာ သက်ရောက်မှုကို မီးမောင်းထိုးပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Infrastructure security incident</li>
-            <li>Telemetry log analysis</li>
-            <li>Blast radius assessment</li>
-            <li>Master encryption key integrity</li>
+            <li>White-label proxy wrapper</li>
+            <li>ByteDance Ark infrastructure</li>
+            <li>Telemetry routing</li>
+            <li>Data boundary implications</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://1password.com/blog/update-on-nov-2026-security-incident">မူရင်းကြေညာချက် ↗</a>
+          <a href="https://kendell.dev/blog/arkwrapper/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -105,21 +105,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">GRH အတွက် ချုံ့ထားသော Lean 4 formal proof script</h2>
-        <span class="src">github.com/lsernau</span>
+        <h2 class="story-title">ransomware ပြန်ပြင်ပေးသော ကုမ္ပဏီ CTO အား wire fraud ဖြင့် စွဲချက်တင်</h2>
+        <span class="src">krebsonsecurity.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>သုတေသနအဖွဲ့ (lsernau နှင့် အဖော်များ) က Generalized Riemann Hypothesis (GRH) အစိတ်အပိုင်းများအတွက် Lean 4 formal verification script ကို ချုံ့ရေးသားထုတ်ပြန်သည်။ Mathlib tactic နှင့် proof verification overhead ကို သိသိသာသာ လျှော့ချထားသည်။</p>
+          <p>KrebsOnSecurity ၏ သတင်းအရ “RansomwareHelp” ခေါင်းဆောင်အဖွဲ့အား လိမ်လည်သော ပြန်လည်ပြင်ဆင်ရေး လုပ်ငန်းစဉ်အတွက် တရားစွဲဆိုခံရသည်။ ရှုပ်ထွေးသော extortion တောင်းဆိုချက်များကို ဖွက်ဝှက်စွာ ပေးချေခဲ့ပြီး ဖောက်ထွင်ထားသော cryptanalysis ဖြင့် decryption လုပ်နိုင်သည်ဟု ဖောက်ပြန်ခဲ့သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Lean 4 formal verification</li>
-            <li>Generalized Riemann Hypothesis (GRH)</li>
-            <li>Mathlib tactics</li>
-            <li>Reduced proof verification overhead</li>
+            <li>Ransomware remediation fraud</li>
+            <li>Covert extortion payment</li>
+            <li>False decryption claims</li>
+            <li>Federal wire fraud indictment</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/lsernau/grh-lean">မူရင်း repository ↗</a>
+          <a href="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -127,21 +127,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">GPT-6.2 Astra — Go code-golf benchmark တွင် မှတ်တမ်းသစ်</h2>
-        <span class="src">bjin.github.io</span>
+        <h2 class="story-title">Hard drive စျေးနှုန်းတက်လာခြင်းနှင့် SMR ကန့်သတ်ချက်များ</h2>
+        <span class="src">blog.ktz.me</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Go code-golf benchmark leaderboard တွင် GPT-6.2 Astra က အတိုဆုံးကုဒ်အတွက် မှတ်တမ်းသစ်များ သတ်မှတ်ခဲ့ပြီး လူ့အထက်တန်း engineer များကို ကျော်လွှားခဲ့သည်။ AST ကို ချုံ့ထားသော ဖွဲ့စည်းပုံနှင့် esoteric ဘာသာစကား optimization များကို အသုံးပြုခဲ့သည်။</p>
+          <p>HDD တစ်တေရာ့ဘိုက်အလိုက် စျေးနှုန်း မက်ထရစ်များ မြင့်တက်လာမှု၊ high-capacity CMR drive များ ပံ့ပိုးမှု ကန့်သတ်ချက်များနှင့် self-hosted ZFS/Ceph backup pool များအတွက် စီးပွားရေးဆိုင်ရာ ဖိအားကို ခွဲခြမ်းစိတ်ဖြာထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Go code-golf benchmark</li>
-            <li>Hyper-condensed AST structures</li>
-            <li>Esoteric language optimization</li>
-            <li>All-time brevity record</li>
+            <li>Price-per-terabyte metrics</li>
+            <li>CMR versus SMR drives</li>
+            <li>ZFS and Ceph backup pools</li>
+            <li>High-capacity supply constraints</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://bjin.github.io/go-codegolf-benchmark/#leaderboard">မူရင်း leaderboard ↗</a>
+          <a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -149,21 +149,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">Ubuntu လုံခြုံရေး patch နှေးကွေးမှု — oss-security ဝေဖန်ချက်</h2>
-        <span class="src">openwall.com</span>
+        <h2 class="story-title">AI ဖြင့်ကူညီသော homelab automation နှင့် declarative infrastructure</h2>
+        <span class="src">janlukas.blog</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>oss-security ဆွေးနွေးမှုတွင် Ubuntu LTS kernel နှင့် core package များရှိ upstream CVE များအတွက် patch ပြန်လည်ထုတ်ပေးမှု နှေးကွေးကြောင်း ဖော်ပြထားသည်။ Canonical ၏ backport သံသရာနှင့် upstream fix များကို နှိုင်းယှဉ်ထားသည်။</p>
+          <p>Local LLM များနှင့် declarative agentic tooling များကို အသုံးပြု၍ self-hosted infrastructure ထိန်းသိမ်းမှု၊ WireGuard orchestration နှင့် zero-trust service configuration ကို ရိုးရှင်းအောင်လုပ်ပုံကို engineering အမြင်ဖြင့် ဆင်ခြင်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Upstream CVE patch latency</li>
-            <li>Ubuntu LTS kernel backporting</li>
-            <li>Canonical backport cycle</li>
-            <li>oss-security disclosure review</li>
+            <li>Local LLM assisted operations</li>
+            <li>Declarative agentic tooling</li>
+            <li>WireGuard orchestration</li>
+            <li>Zero-trust service configuration</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://www.openwall.com/lists/oss-security/2026/11/25/9">မူရင်းဆွေးနွေးချက် ↗</a>
+          <a href="https://janlukas.blog/posts/ai-self-hosting">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -171,21 +171,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Pinwheel calculator များ၏ လည်ပတ်ပုံ — mechanical reverse engineering</h2>
-        <span class="src">blog.coredump.cx</span>
+        <h2 class="story-title">Intel One Mono — developer အတွက် monospaced typeface ဖွဲ့စည်းပုံ</h2>
+        <span class="src">github.com/intel</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Odhner နှင့် pinwheel ပုံစံ variable-toothed gear calculator များကို နက်နက်ရှိုင်းရှိုင်း ခွဲခြမ်းထားသည်။ tens-carry ယန္တရား၊ mechanical complement arithmetic နှင့် electronic မတိုင်မီ computing ၏ hardware ကန့်သတ်ချက်များကို ရှင်းပြသည်။</p>
+          <p>Developer ပတ်ဝန်းကျင်တွင် ဖတ်ရှုလွယ်ကူမှုနှင့် မျက်နှာပြင်ရှင်းလင်းမှုအတွက် အထူးဒီဇိုင်းထုတ်ထားသော open-source monospaced typeface Intel One Mono ၏ ဖွဲ့စည်းပုံကို နက်နက်ရှိုင်းရှိုင်း ခွဲခြမ်းထားသည်။ ဆင်တူသော code glyph များကို ခွဲခြားနိုင်စေရန် ဒီဇိုင်းထုတ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Odhner pinwheel mechanism</li>
-            <li>Variable-toothed gear</li>
-            <li>Tens-carry mechanics</li>
-            <li>Mechanical complement arithmetic</li>
+            <li>Open-source monospaced typeface</li>
+            <li>Code glyph distinction</li>
+            <li>Screen legibility</li>
+            <li>Developer environment typography</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://blog.coredump.cx/p/how-did-pinwheel-calculators-work">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://github.com/intel/intel-one-mono">မူရင်း repository ↗</a>
         </div>
       </div>
     </article>
@@ -193,21 +193,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">UI style guide archive — Xerox Star, classic Mac OS, NeXTSTEP နှင့် CDE</h2>
-        <span class="src">aresluna.org</span>
+        <h2 class="story-title">Web extension အတွင်းပိုင်းယန္တရား — ကြော်ငြာဝင်လာချိန်တွင် DOM နှင့် video stream ပြန်လည်စတင်ခြင်း</h2>
+        <span class="src">github.com/antonpictures</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Xerox Star၊ classic Mac OS၊ NeXTSTEP နှင့် CDE interface design spec များနှင့် spatial layout ကန့်သတ်ချက်များကို မှတ်တမ်းတင်ထားသော engineering နှင့် design archive ဖြစ်သည်။</p>
+          <p>YouTube ကြော်ငြာ ဝင်လာသည်ကို ရှာဖွေတွေ့ရှိသည့်အခါ playback telemetry ကို ဖမ်းယူပြီး DOM video state များကို အလိုအလျောက် လည်ပတ်စေသော client-side web extension နည်းလမ်းများကို ဖော်ပြထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Xerox Star interface specs</li>
-            <li>Classic Mac OS and NeXTSTEP</li>
-            <li>CDE desktop environment</li>
-            <li>Spatial layout constraints</li>
+            <li>Browser extension architecture</li>
+            <li>DOM video state management</li>
+            <li>Playback telemetry interception</li>
+            <li>Ad insertion detection</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://aresluna.org/ui-style-guides/">မူရင်းစာမျက်နှာ ↗</a>
+          <a href="https://github.com/antonpictures/youtube-punisher">မူရင်း repository ↗</a>
         </div>
       </div>
     </article>
@@ -215,21 +215,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">Roald Dahl ၏ ၁၉၅၄ “The Great Automatic Grammatizator” — စာပေ ထုတ်လုပ်သည့် စက်အတွေးအခေါ်</h2>
-        <span class="src">gwern.net</span>
+        <h2 class="story-title">Kamil Khan Mumtaz နှင့် ရိုးရာလက်မှုပညာ ဗိသုကာ</h2>
+        <span class="src">worksinprogress.co</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Roald Dahl ၏ ၁၉၅၄ ဝတ္ထုတွင် algorithmic prose ပေါင်းစပ်ခြင်း၊ automated style transfer နှင့် စာပေထုတ်လုပ်မှု ကုန်ပစ္စည်းပြုလုပ်ခြင်းကို ကြိုတင်ခန့်မှန်းထားသည်။ ထိုဝတ္ထုကို archival ခွဲခြမ်းစိတ်ဖြာချက် ဖြစ်သည်။</p>
+          <p>ပါကစ္စတန်ဗိသုကာပညာရှင် Kamil Khan Mumtaz ၏ ဒေသထွက် အုတ်ချပ်ခဲလုပ်ငန်း၊ passive climate engineering နှင့် စက်မှုလုပ်ငန်းမဟုတ်သော ဖွဲ့စည်းပုံဒီဇိုင်းဆိုင်ရာ အတွေးအခေါ်ကို ဆန်းစစ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Algorithmic prose synthesis</li>
-            <li>Automated style transfer</li>
-            <li>Mechanical literary generation</li>
-            <li>Archival literary analysis</li>
+            <li>Indigenous brick masonry</li>
+            <li>Passive climate engineering</li>
+            <li>Non-industrialized structural design</li>
+            <li>Vernacular architecture</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://gwern.net/doc/fiction/science-fiction/1953-dahl-thegreatautomaticgrammatizator.pdf">မူရင်း PDF ↗</a>
+          <a href="https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
