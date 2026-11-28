@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၇။">
-<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၇</title>
+<meta name="description" content="Hacker News ထိပ်တန်းသတင်းများကို မြန်မာဘာသာဖြင့် ဖတ်ရှုရန်။ ၂၀၂၆ နိုဝင်ဘာ ၂၈။">
+<title>Hacker News ကို မြန်မာလို — ၂၀၂၆ နိုဝင်ဘာ ၂၈</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,8 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
 
 <main class="wrap">
   <section class="feed-head">
-    <span class="eyebrow">သောကြာနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၇</span>
-    <div class="date-en">Friday, November 27, 2026</div>
+    <span class="eyebrow">စနေနေ့၊ ၂၀၂၆ နိုဝင်ဘာ ၂၈</span>
+    <div class="date-en">Saturday, November 28, 2026</div>
     <h1>ယနေ့ထိပ်တန်းဆောင်းပါးများ</h1>
   </section>
 
@@ -61,21 +61,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">01</span>
       <div>
-        <h2 class="story-title">llama.cpp အတွက် AMD-သီးသန့် optimization fork</h2>
-        <span class="src">devnull.land</span>
+        <h2 class="story-title">Google — DeepCrossAttention၊ transformer ကို ၃ ဆ မြန်စေသော architecture ပြင်ဆင်မှု</h2>
+        <span class="src">research.google</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ဆော့ဖ်ဝဲရေးသူတစ်ဦးက AMD Radeon နှင့် Instinct hardware အတွက် ROCm/HIP ပုံစံ kernel များနှင့် memory access optimization များကို llama.cpp အတွက် ထုတ်ပြန်ထားသည်။ Token generation နှင့် prompt-eval latency တို့ကို သိသိသာသာ မြန်ဆန်စေသည်ဟု ဖော်ပြသည်။</p>
+          <p>Google Research က transformer ၏ standard residual stream များကို cross-layer sparse attention လမ်းကြောင်းများဖြင့် အစားထိုးသော DeepCrossAttention ကို မိတ်ဆက်သည်။ မော်ဒယ်အရည်အသွေး ညီမျှစွာဖြင့် training နှင့် inference convergence ကို အများဆုံး ၃ ဆ မြန်ဆန်စေကြောင်း ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>llama.cpp inference runtime</li>
-            <li>ROCm and HIP kernels</li>
-            <li>AMD Radeon and Instinct GPUs</li>
-            <li>Token generation and prompt-eval latency</li>
+            <li>Residual stream replacement</li>
+            <li>Cross-layer sparse attention</li>
+            <li>Transformer architecture revision</li>
+            <li>Up to 3x faster convergence</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://devnull.land/amd-specific-llama-cpp">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://research.google/blog/supercharging-transformer-residual-connections/">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -83,21 +83,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">02</span>
       <div>
-        <h2 class="story-title">LLM API ဝန်ဆောင်မှုအချို့သည် ByteDance Ark ၏ wrapper များဖြစ်ကြောင်း စုံစမ်းတွေ့ရှိ</h2>
-        <span class="src">kendell.dev</span>
+        <h2 class="story-title">Unkernel — တကယ့် upstream Linux kernel ကို WebAssembly သို့ compile</h2>
+        <span class="src">unkernel.dev</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Reverse-engineering ခွဲခြမ်းချက်အရ Novita နှင့် StreamLake ကဲ့သို့ LLM API ဝန်ဆောင်မှုများသည် ByteDance Ark အခြေခံအဆောက်အအုံအပေါ် white-label proxy wrapper များအဖြစ် လည်ပတ်နေကြောင်း တွေ့ရသည်။ Telemetry လမ်းကြောင်းနှင့် data boundary ဆိုင်ရာ သက်ရောက်မှုကို မီးမောင်းထိုးပြသည်။</p>
+          <p>Unkernel စီမံကိန်းသည် တကယ့် upstream Linux kernel ကို WebAssembly (Wasm) ပစ်မှတ်ဖြင့် compile လုပ်နိုင်ခဲ့သည်။ POSIX system call များ၊ memory paging နှင့် user-space binary များကို browser နှင့် edge runtime အတွင်းတွင် တိုက်ရိုက် run နိုင်သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>White-label proxy wrapper</li>
-            <li>ByteDance Ark infrastructure</li>
-            <li>Telemetry routing</li>
-            <li>Data boundary implications</li>
+            <li>Linux kernel compiled to WebAssembly</li>
+            <li>POSIX system call emulation</li>
+            <li>Memory paging</li>
+            <li>Browser and edge runtime execution</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://kendell.dev/blog/arkwrapper/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://unkernel.dev">မူရင်းစာမျက်နှာ ↗</a>
         </div>
       </div>
     </article>
@@ -105,21 +105,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">03</span>
       <div>
-        <h2 class="story-title">ransomware ပြန်ပြင်ပေးသော ကုမ္ပဏီ CTO အား wire fraud ဖြင့် စွဲချက်တင်</h2>
-        <span class="src">krebsonsecurity.com</span>
+        <h2 class="story-title">WebRTC ကို အသုံးပြုသော e-commerce credit card skimming — CSP ကျော်လွှားမှု</h2>
+        <span class="src">infohawk.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>KrebsOnSecurity ၏ သတင်းအရ “RansomwareHelp” ခေါင်းဆောင်အဖွဲ့အား လိမ်လည်သော ပြန်လည်ပြင်ဆင်ရေး လုပ်ငန်းစဉ်အတွက် တရားစွဲဆိုခံရသည်။ ရှုပ်ထွေးသော extortion တောင်းဆိုချက်များကို ဖွက်ဝှက်စွာ ပေးချေခဲ့ပြီး ဖောက်ထွင်ထားသော cryptanalysis ဖြင့် decryption လုပ်နိုင်သည်ဟု ဖောက်ပြန်ခဲ့သည်။</p>
+          <p>InfoHawk ၏ လုံခြုံရေးခွဲခြမ်းချက်အရ Black Friday အချိန်တွင် Magecart ပုံစံ skimmer အသစ်များသည် WebRTC data channel များကို အသုံးပြု၍ CSP (Content Security Policy) ကို ကျော်လွှားပြီး mobile checkout DOM မှ payment token များကို တိုက်ရိုက် ထုတ်ယူနေကြောင်း ဖော်ပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Ransomware remediation fraud</li>
-            <li>Covert extortion payment</li>
-            <li>False decryption claims</li>
-            <li>Federal wire fraud indictment</li>
+            <li>Magecart-style card skimming</li>
+            <li>WebRTC data channel exfiltration</li>
+            <li>Content Security Policy bypass</li>
+            <li>Mobile checkout DOM token theft</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/">မူရင်းသတင်း ↗</a>
+          <a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">မူရင်းသတင်း ↗</a>
         </div>
       </div>
     </article>
@@ -127,21 +127,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">04</span>
       <div>
-        <h2 class="story-title">Hard drive စျေးနှုန်းတက်လာခြင်းနှင့် SMR ကန့်သတ်ချက်များ</h2>
-        <span class="src">blog.ktz.me</span>
+        <h2 class="story-title">Convex backend skills — telemetry ယိုဖိတ်မှု ပြဿနာ</h2>
+        <span class="src">github.com/convex</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>HDD တစ်တေရာ့ဘိုက်အလိုက် စျေးနှုန်း မက်ထရစ်များ မြင့်တက်လာမှု၊ high-capacity CMR drive များ ပံ့ပိုးမှု ကန့်သတ်ချက်များနှင့် self-hosted ZFS/Ceph backup pool များအတွက် စီးပွားရေးဆိုင်ရာ ဖိအားကို ခွဲခြမ်းစိတ်ဖြာထားသည်။</p>
+          <p>GitHub issue တစ်ခုတွင် Convex backend agentic skill များက project definition၊ schema architecture နှင့် app concept အပြည့်အစုံကို သဘောတူညီချက်မရှိဘဲ remote telemetry endpoint သို့ တိတ်တဆိတ် ပို့နေကြောင်း ဖော်ထုတ်ထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Price-per-terabyte metrics</li>
-            <li>CMR versus SMR drives</li>
-            <li>ZFS and Ceph backup pools</li>
-            <li>High-capacity supply constraints</li>
+            <li>Agentic skill telemetry</li>
+            <li>Schema architecture leakage</li>
+            <li>Untruncated project definitions</li>
+            <li>Silent remote transmission</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/">မူရင်းဘလော့ဂ် ↗</a>
+          <a href="https://github.com/convex/convex-backend-skill/issues/64">မူရင်း issue ↗</a>
         </div>
       </div>
     </article>
@@ -149,21 +149,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">05</span>
       <div>
-        <h2 class="story-title">AI ဖြင့်ကူညီသော homelab automation နှင့် declarative infrastructure</h2>
-        <span class="src">janlukas.blog</span>
+        <h2 class="story-title">GPT-6.2 Astra — ၁၈၀၈ ခုနှစ် အမည်မသိ sketchbook ၏ မူရင်းကို ဖော်ထုတ်</h2>
+        <span class="src">generativehistory.substack.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Local LLM များနှင့် declarative agentic tooling များကို အသုံးပြု၍ self-hosted infrastructure ထိန်းသိမ်းမှု၊ WireGuard orchestration နှင့် zero-trust service configuration ကို ရိုးရှင်းအောင်လုပ်ပုံကို engineering အမြင်ဖြင့် ဆင်ခြင်ထားသည်။</p>
+          <p>သုတေသီများက GPT-6.2 Astra သည် ၁၉ ရာစုမန်နူစကရစ်များ၏ လက်ရေးမျဉ်းကြောင်း၊ မင်ပျက်စီးမှုခွဲခြမ်းချက်နှင့် watermark များကို archive အများအပြားမှ ကိုးကားစစ်ဆေးပြီး ၁၈၀၈ ခုနှစ် အမည်မသိ sketchbook ကို ရေးသားသူအဖြစ် အတည်ပြုနိုင်ကြောင်း ပြသခဲ့သည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Local LLM assisted operations</li>
-            <li>Declarative agentic tooling</li>
-            <li>WireGuard orchestration</li>
-            <li>Zero-trust service configuration</li>
+            <li>Multi-archive cross-referencing</li>
+            <li>Handwriting stroke analysis</li>
+            <li>Ink degradation analysis</li>
+            <li>Watermark verification</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://janlukas.blog/posts/ai-self-hosting">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
@@ -171,21 +171,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">06</span>
       <div>
-        <h2 class="story-title">Intel One Mono — developer အတွက် monospaced typeface ဖွဲ့စည်းပုံ</h2>
-        <span class="src">github.com/intel</span>
+        <h2 class="story-title">9/UX — 9front အတွက် Macintosh ပုံစံ window manager</h2>
+        <span class="src">progrium.github.io</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>Developer ပတ်ဝန်းကျင်တွင် ဖတ်ရှုလွယ်ကူမှုနှင့် မျက်နှာပြင်ရှင်းလင်းမှုအတွက် အထူးဒီဇိုင်းထုတ်ထားသော open-source monospaced typeface Intel One Mono ၏ ဖွဲ့စည်းပုံကို နက်နက်ရှိုင်းရှိုင်း ခွဲခြမ်းထားသည်။ ဆင်တူသော code glyph များကို ခွဲခြားနိုင်စေရန် ဒီဇိုင်းထုတ်ထားသည်။</p>
+          <p>9/UX စီမံကိန်းသည် Plan 9 fork ဖြစ်သော 9front အတွက် retro Macintosh System 7 ပုံစံ window management interface နှင့် bitmap font rendering pipeline ကို ယူဆောင်လာသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Open-source monospaced typeface</li>
-            <li>Code glyph distinction</li>
-            <li>Screen legibility</li>
-            <li>Developer environment typography</li>
+            <li>9front (Plan 9 fork)</li>
+            <li>Window manager architecture</li>
+            <li>Bitmap font rendering</li>
+            <li>System 7 inspired interface</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/intel/intel-one-mono">မူရင်း repository ↗</a>
+          <a href="https://progrium.github.io/9ux/">မူရင်းစာမျက်နှာ ↗</a>
         </div>
       </div>
     </article>
@@ -193,21 +193,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">07</span>
       <div>
-        <h2 class="story-title">Web extension အတွင်းပိုင်းယန္တရား — ကြော်ငြာဝင်လာချိန်တွင် DOM နှင့် video stream ပြန်လည်စတင်ခြင်း</h2>
-        <span class="src">github.com/antonpictures</span>
+        <h2 class="story-title">Balatro ၏ ထုတ်လုပ်မှု အချိန်ဇယား — LocalThunk ၏ post-mortem</h2>
+        <span class="src">localthunk.com</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>YouTube ကြော်ငြာ ဝင်လာသည်ကို ရှာဖွေတွေ့ရှိသည့်အခါ playback telemetry ကို ဖမ်းယူပြီး DOM video state များကို အလိုအလျောက် လည်ပတ်စေသော client-side web extension နည်းလမ်းများကို ဖော်ပြထားသည်။</p>
+          <p>Roguelike deckbuilder Balatro ကို ဖန်တီးသူ LocalThunk က ၎င်း၏ နည်းပညာဆိုင်ရာ architecture၊ state-machine ပြုပြင်မှုများနှင့် သင်္ချာဆိုင်ရာ balance ညှိနှိုင်းမှု အချိန်ဇယားကို ဖော်ပြထားသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Browser extension architecture</li>
-            <li>DOM video state management</li>
-            <li>Playback telemetry interception</li>
-            <li>Ad insertion detection</li>
+            <li>Roguelike deckbuilder architecture</li>
+            <li>State-machine iteration</li>
+            <li>Mathematical balance tuning</li>
+            <li>Independent development post-mortem</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://github.com/antonpictures/youtube-punisher">မူရင်း repository ↗</a>
+          <a href="https://localthunk.com/blog/balatro-timeline-3aarh">မူရင်းဘလော့ဂ် ↗</a>
         </div>
       </div>
     </article>
@@ -215,21 +215,21 @@ h1{font-size:30px;font-weight:700;line-height:1.35}
     <article class="story">
       <span class="rank">08</span>
       <div>
-        <h2 class="story-title">Kamil Khan Mumtaz နှင့် ရိုးရာလက်မှုပညာ ဗိသုကာ</h2>
-        <span class="src">worksinprogress.co</span>
+        <h2 class="story-title">Citroën hydropneumatic suspension — ဖိအားပေးအရည်နှင့် nitrogen ဘောလုံး ယန္တရား</h2>
+        <span class="src">citroenet.org.uk</span>
         <div class="body">
           <span class="label">အကျဉ်းချုပ်</span>
-          <p>ပါကစ္စတန်ဗိသုကာပညာရှင် Kamil Khan Mumtaz ၏ ဒေသထွက် အုတ်ချပ်ခဲလုပ်ငန်း၊ passive climate engineering နှင့် စက်မှုလုပ်ငန်းမဟုတ်သော ဖွဲ့စည်းပုံဒီဇိုင်းဆိုင်ရာ အတွေးအခေါ်ကို ဆန်းစစ်ထားသည်။</p>
+          <p>Citroën ၏ ဂန္တဝင် hydropneumatic suspension ကို စက်မှုအင်ဂျင်နီယာအမြင်ဖြင့် နက်နက်ရှိုင်းရှိုင်း ခွဲခြမ်းထားသည်။ High-pressure mineral fluid circuit၊ nitrogen sphere များနှင့် self-levelling mechanical valve များ၏ လည်ပတ်ပုံကို ရှင်းပြသည်။</p>
           <span class="label">နည်းပညာ အချက်များ</span>
           <ul class="specs">
-            <li>Indigenous brick masonry</li>
-            <li>Passive climate engineering</li>
-            <li>Non-industrialized structural design</li>
-            <li>Vernacular architecture</li>
+            <li>Hydropneumatic suspension</li>
+            <li>High-pressure mineral fluid circuit</li>
+            <li>Nitrogen sphere accumulator</li>
+            <li>Self-levelling valve</li>
           </ul>
         </div>
         <div class="links">
-          <a href="https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/">မူရင်းဆောင်းပါး ↗</a>
+          <a href="https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html">မူရင်းဆောင်းပါး ↗</a>
         </div>
       </div>
     </article>
